@@ -2,11 +2,13 @@
 
 import PageLayout from '@/components/PageLayout'
 import Link from 'next/link'
+import { use } from 'react'
 
-export default function BlogDetailsPage({ params }: { params: { id: string } }) {
+export default function BlogDetailsPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params)
   // In a real app, you would fetch the blog post data based on the ID
   const blogPost = {
-    id: params.id,
+    id: id,
     title: "How to Build a Scalable GTM Engine in 90 Days",
     content: `
       <p>Building a scalable go-to-market (GTM) engine doesn't have to take quarters of planning and execution. With the right framework and focused implementation, you can transform your revenue operations in just 90 days.</p>

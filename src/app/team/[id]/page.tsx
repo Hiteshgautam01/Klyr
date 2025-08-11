@@ -2,11 +2,13 @@
 
 import PageLayout from '@/components/PageLayout'
 import Link from 'next/link'
+import { use } from 'react'
 
-export default function TeamDetailsPage({ params }: { params: { id: string } }) {
+export default function TeamDetailsPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params)
   // In a real app, you would fetch team member data based on the ID
   const teamMember = {
-    id: params.id,
+    id: id,
     name: 'Sarah Chen',
     role: 'Founder & CEO',
     image: '/assets/img/team/team-details-1.jpg',

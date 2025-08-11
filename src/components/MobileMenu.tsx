@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect } from 'react'
-import Link from 'next/link'
 
 export default function MobileMenu() {
   useEffect(() => {
@@ -81,7 +80,7 @@ export default function MobileMenu() {
     // Close menu on link click
     const mobileLinks = mobileMenuContainer?.querySelectorAll('a')
     mobileLinks?.forEach(link => {
-      link.addEventListener('click', (e) => {
+      link.addEventListener('click', () => {
         const href = link.getAttribute('href')
         if (href && href !== '#') {
           closeMenu()

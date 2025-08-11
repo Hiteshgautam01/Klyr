@@ -45,7 +45,7 @@ export default function ProductPageLayout({ children }: ProductPageLayoutProps) 
         
         // Initialize smooth scroll
         if ((window as any).gsap && (window as any).ScrollSmoother) {
-          const smoother = (window as any).ScrollSmoother.create({
+          (window as any).ScrollSmoother.create({
             smooth: 1.35,
             effects: true,
             smoothTouch: false,
