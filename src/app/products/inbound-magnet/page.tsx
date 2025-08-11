@@ -51,7 +51,7 @@ export default function InboundMagnetPage() {
                 <div className="header-bottom__right header-five__btn d-flex align-items-center justify-content-end">
                   <div className="header-bottom__btn d-flex align-items-center">
                     <a className="tp-btn-yellow inner-color tp-btn-hover alt-color-black d-none d-md-inline-block" href="#">
-                      <span className="white-text">🧠 Free GTM Diagnosis</span>
+                      <span className="white-text"><i className="fal fa-brain"></i> Free GTM Diagnosis</span>
                       <b></b>
                     </a>
                     <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars"></i></a>
@@ -86,7 +86,7 @@ export default function InboundMagnetPage() {
             <div className="tpoffcanvas__info text-center">
               <h4 className="offcanva-title">we are here</h4>
               <a href="#" target="_blank">
-                📍 India HQ<br />
+                <i className="fal fa-map-marker-alt"></i> India HQ<br />
                 Serving global SaaS teams
               </a>
             </div>
@@ -132,8 +132,8 @@ export default function InboundMagnetPage() {
                         </p>
                       </div>
                       <div className="tp-hero-five-btn-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                        <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#">🧠 Run Free Inbound Audit</a>
-                        <a className="tp-btn-grey mb-20" href="#">📈 See the Full Engine</a>
+                        <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#"><i className="fal fa-brain"></i> Run Free Inbound Audit</a>
+                        <a className="tp-btn-grey mb-20" href="#"><i className="fal fa-chart-line"></i> See the Full Engine</a>
                       </div>
                     </div>
                   </div>
@@ -142,12 +142,12 @@ export default function InboundMagnetPage() {
             </div>
 
             {/* Problem Section */}
-            <div className="tp-about-area pt-100 pb-100 grey-bg-3">
+            <div className="tp-about-area pt-120 pb-120 grey-bg-3">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-about-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">❌ The Problem <span>You're Tolerating</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-times-circle"></i> The Problem <span>You're Tolerating</span></h3>
                       <p>Your traffic looks fine. Content? Decent. But still:</p>
                     </div>
                   </div>
@@ -231,7 +231,7 @@ export default function InboundMagnetPage() {
                     <div className="tp-service-five-section-box">
                       <span className="tp-section-subtitle-5">Revenue Infrastructure</span>
                       <h3 className="tp-section-title-5 pb-15">
-                        ✅ What the Inbound Magnet <br /><span>Engine Does</span>
+                        <i className="fal fa-check-circle"></i> What the Inbound Magnet <br /><span>Engine Does</span>
                       </h3>
                       <p className="pb-20">This isn't lead gen. It's revenue infrastructure — installed.<br />
                         We build personalized, AI-powered inbound systems that convert real buyer intent into sales pipeline.
@@ -250,7 +250,7 @@ export default function InboundMagnetPage() {
                               <img src="/assets/img/service/sv-icon-5-1.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">✅ Inbound Audit</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-check-circle"></i> Inbound Audit</h3>
                               <p>Diagnose site, forms, CTAs, and drop-offs</p>
                             </div>
                           </div>
@@ -266,7 +266,7 @@ export default function InboundMagnetPage() {
                               <img src="/assets/img/service/sv-icon-5-2.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">✅ Conversion Flows</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-check-circle"></i> Conversion Flows</h3>
                               <p>Calendar workflows that actually book demos</p>
                             </div>
                           </div>
@@ -282,7 +282,7 @@ export default function InboundMagnetPage() {
                               <img src="/assets/img/service/sv-icon-5-3.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">✅ Email Nurtures</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-check-circle"></i> Email Nurtures</h3>
                               <p>Triggered journeys post-signup and post-demo</p>
                             </div>
                           </div>
@@ -298,7 +298,7 @@ export default function InboundMagnetPage() {
                               <img src="/assets/img/service/sv-icon-5-4.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">✅ Lead Magnet</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-check-circle"></i> Lead Magnet</h3>
                               <p>Built to convert (checklist, guide, or calculator)</p>
                             </div>
                           </div>
@@ -314,7 +314,7 @@ export default function InboundMagnetPage() {
                               <img src="/assets/img/service/sv-icon-5-1.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">✅ CRO Boosts</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-check-circle"></i> CRO Boosts</h3>
                               <p>Above-the-fold upgrades and CTA tuning</p>
                             </div>
                           </div>
@@ -330,7 +330,7 @@ export default function InboundMagnetPage() {
                               <img src="/assets/img/service/sv-icon-5-2.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">✅ Newsletter + Welcome</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-check-circle"></i> Newsletter + Welcome</h3>
                               <p>Nurture that prevents churn</p>
                             </div>
                           </div>
@@ -348,8 +348,8 @@ export default function InboundMagnetPage() {
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-price-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">🧩 Choose Your <span>Inbound Stack</span></h3>
-                      <p>💡 Each tier compounds. Drop one, lose momentum.</p>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-puzzle-piece"></i> Choose Your <span>Inbound Stack</span></h3>
+                      <p><i className="fal fa-lightbulb"></i> Each tier compounds. Drop one, lose momentum.</p>
                     </div>
                   </div>
                 </div>
@@ -393,9 +393,9 @@ export default function InboundMagnetPage() {
                           <ul>
                             <li>Nurture + score + automate</li>
                             <li>Everything in Capture & Convert</li>
-                            <li>🤖 Chatbots, WhatsApp capture</li>
-                            <li>🔍 Behavior analytics, A/B tests</li>
-                            <li>🔁 Multi-path automation, lead scoring</li>
+                            <li><i className="fal fa-robot"></i> Chatbots, WhatsApp capture</li>
+                            <li><i className="fal fa-search"></i> Behavior analytics, A/B tests</li>
+                            <li><i className="fal fa-sync"></i> Multi-path automation, lead scoring</li>
                           </ul>
                         </div>
                       </div>
@@ -418,10 +418,10 @@ export default function InboundMagnetPage() {
                           <ul>
                             <li>Personalization + ROI clarity</li>
                             <li>Everything in Behavioral Engine</li>
-                            <li>🎯 Personalization by ICP</li>
-                            <li>📊 Attribution dashboard</li>
-                            <li>🚨 SDR hot lead alerts</li>
-                            <li>📈 SEO + session insights</li>
+                            <li><i className="fal fa-bullseye"></i> Personalization by ICP</li>
+                            <li><i className="fal fa-chart-bar"></i> Attribution dashboard</li>
+                            <li><i className="fal fa-exclamation-triangle"></i> SDR hot lead alerts</li>
+                            <li><i className="fal fa-chart-line"></i> SEO + session insights</li>
                           </ul>
                         </div>
                       </div>
@@ -435,12 +435,12 @@ export default function InboundMagnetPage() {
             </div>
 
             {/* Who It's For */}
-            <div className="tp-about-area pt-100 pb-100">
+            <div className="tp-about-area pt-120 pb-120">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-about-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">🎯 Who <span>This Is For</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-bullseye"></i> Who <span>This Is For</span></h3>
                       <p>You're earning the traffic. Now make it buy.</p>
                     </div>
                   </div>
@@ -512,12 +512,12 @@ export default function InboundMagnetPage() {
             </div>
 
             {/* Results Section */}
-            <div className="tp-fun-fact-area tp-fun-fact-2 pt-100 pb-60 grey-bg-3">
+            <div className="tp-fun-fact-area tp-fun-fact-2 pt-120 pb-60 grey-bg-3">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-fun-fact-section-title text-center pb-60">
-                      <h4 className="tp-fun-fact-title">📊 Real Results</h4>
+                      <h4 className="tp-fun-fact-title"><i className="fal fa-chart-bar"></i> Real Results</h4>
                     </div>
                   </div>
                 </div>
@@ -566,7 +566,7 @@ export default function InboundMagnetPage() {
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-plan-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">⚙️ 3-Step <span>Snapshot</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-cog"></i> 3-Step <span>Snapshot</span></h3>
                     </div>
                   </div>
                 </div>
@@ -574,7 +574,7 @@ export default function InboundMagnetPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>🩺</span>
+                        <span><i className="fal fa-stethoscope"></i></span>
                         <h4>Audit</h4>
                       </div>
                       <p>Funnel, CTAs, nurture gaps diagnosed</p>
@@ -583,7 +583,7 @@ export default function InboundMagnetPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>🔧</span>
+                        <span><i className="fal fa-wrench"></i></span>
                         <h4>Install Engine</h4>
                       </div>
                       <p>CRO, workflows, automation, content</p>
@@ -592,7 +592,7 @@ export default function InboundMagnetPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>📈</span>
+                        <span><i className="fal fa-chart-line"></i></span>
                         <h4>Watch Pipeline Lift</h4>
                       </div>
                       <p>Bookings rise, quality improves, signals trigger action</p>
@@ -603,7 +603,7 @@ export default function InboundMagnetPage() {
             </div>
 
             {/* Final CTA */}
-            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" data-background="/assets/img/cta/cta-bg-5-1.png">
+            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" style={{backgroundImage: 'url(/assets/img/cta/cta-bg-5-1.png)'}}>
               <div className="tp-cta-five-shape-1 d-none d-md-block">
                 <img src="/assets/img/cta/cta-shape-5-1.png" alt="" />
               </div> 
@@ -614,14 +614,14 @@ export default function InboundMagnetPage() {
                 <div className="row g-0">
                   <div className="col-12">
                     <div className="tp-cta-five-section-box text-center">
-                      <span className="tp-section-subtitle-5">💣 Final CTA</span>
+                      <span className="tp-section-subtitle-5"><i className="fal fa-bomb"></i> Final CTA</span>
                       <h3 className="tp-section-title-5 pb-30">You wrote the content. Paid for traffic. <br /><span>Earned the visit.</span></h3>
                       <p className="pb-30">So why is your pipeline still starving?<br />
                       This engine captures every missed opportunity — and compounds it into growth.</p>
                       <div className="tp-cta-five-btn d-flex justify-content-center gap-3 flex-wrap">
-                        <a className="tp-btn-blue-lg circle-effect" href="#">🧠 Run Audit</a>
-                        <a className="tp-btn-yellow-lg circle-effect" href="#">📈 See Results</a>
-                        <a className="tp-btn-grey circle-effect" href="#">⚙️ Compare Options</a>
+                        <a className="tp-btn-blue-lg circle-effect" href="#"><i className="fal fa-brain"></i> Run Audit</a>
+                        <a className="tp-btn-yellow-lg circle-effect" href="#"><i className="fal fa-chart-line"></i> See Results</a>
+                        <a className="tp-btn-grey circle-effect" href="#"><i className="fal fa-cog"></i> Compare Options</a>
                       </div>
                     </div>
                   </div>
@@ -645,7 +645,7 @@ export default function InboundMagnetPage() {
                           </a>
                         </div>
                         <div className="tp-footer__contact-info">
-                          <p>KLYRR — Modular GTM Systems for SaaS Growth<br />📍 India HQ. Serving global SaaS teams.</p>
+                          <p>KLYRR — Modular GTM Systems for SaaS Growth<br /><i className="fal fa-map-marker-alt"></i> India HQ. Serving global SaaS teams.</p>
                         </div>
                       </div>
                     </div>

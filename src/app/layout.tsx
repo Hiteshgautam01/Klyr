@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ScriptLoader from "../components/ScriptLoader";
 import ClientOnlyWrapper from "../components/ClientOnlyWrapper";
+import AnimationInitializer from "../components/AnimationInitializer";
 
 export const metadata: Metadata = {
   title: "KLYRR - Modular GTM Systems for SaaS Growth",
@@ -29,47 +30,15 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
         <link rel="stylesheet" href="/assets/css/spacing.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/klyrr-custom.css" />
       </head>
       <body suppressHydrationWarning={true}>
-        {/* Preloader */}
-        <ClientOnlyWrapper>
-          <div id="loading" style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            backgroundColor: '#ffffff',
-            zIndex: 9999,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-            <div className="preloader" style={{display: 'flex', gap: '8px'}}>
-              <span style={{
-                width: '12px',
-                height: '12px',
-                borderRadius: '50%',
-                backgroundColor: '#3b82f6',
-                animation: 'preloader 1.4s ease-in-out infinite both',
-                animationDelay: '-0.32s'
-              }}></span>
-              <span style={{
-                width: '12px',
-                height: '12px',
-                borderRadius: '50%',
-                backgroundColor: '#3b82f6',
-                animation: 'preloader 1.4s ease-in-out infinite both',
-                animationDelay: '-0.16s'
-              }}></span>
-            </div>
-          </div>
-        </ClientOnlyWrapper>
         
         {children}
         
         <ClientOnlyWrapper>
           <ScriptLoader />
+          <AnimationInitializer />
         </ClientOnlyWrapper>
         
       </body>

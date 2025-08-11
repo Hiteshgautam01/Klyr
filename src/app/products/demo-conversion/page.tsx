@@ -51,7 +51,7 @@ export default function DemoConversionPage() {
                 <div className="header-bottom__right header-five__btn d-flex align-items-center justify-content-end">
                   <div className="header-bottom__btn d-flex align-items-center">
                     <a className="tp-btn-yellow inner-color tp-btn-hover alt-color-black d-none d-md-inline-block" href="#">
-                      <span className="white-text">🧠 Free GTM Diagnosis</span>
+                      <span className="white-text"><i className="fal fa-brain"></i> Free GTM Diagnosis</span>
                       <b></b>
                     </a>
                     <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars"></i></a>
@@ -86,7 +86,7 @@ export default function DemoConversionPage() {
             <div className="tpoffcanvas__info text-center">
               <h4 className="offcanva-title">we are here</h4>
               <a href="#" target="_blank">
-                📍 India HQ<br />
+                <i className="fal fa-map-marker-alt"></i> India HQ<br />
                 Serving global SaaS teams
               </a>
             </div>
@@ -107,86 +107,8 @@ export default function DemoConversionPage() {
         <div id="smooth-content">
           <main className="fix">
 
-            {/* Breadcrumb Section */}
-            <section className="breadcrumb__area include-bg pt-200 pb-50" style={{backgroundColor: '#F8F8FF'}}>
-              <div className="container">
-                <div className="row">
-                  <div className="col-xxl-12">
-                    <div className="breadcrumb__content p-relative z-index-1">
-                      <h3 className="breadcrumb__title">Demo Conversion Killshot</h3>
-                      <div className="breadcrumb__list">
-                        <span><a href="/">Home</a></span>
-                        <span>Demo Conversion Killshot</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
             {/* Hero Section */}
-            <section className="hero__area hero-height d-flex align-items-center p-relative fix">
-              <div className="hero__shape">
-                <img className="hero-shape-1" src="/assets/img/hero/hero-shape-1.png" alt="shape" />
-                <img className="hero-shape-2" src="/assets/img/hero/hero-shape-2.png" alt="shape" />
-              </div>
-              <div className="container">
-                <div className="row align-items-center">
-                  <div className="col-xxl-6 col-xl-6 col-lg-6">
-                    <div className="hero__content">
-                      <span className="hero__sub-title">🧠 Demo Conversion Killshot</span>
-                      <h1 className="hero__title">Your Demos Aren't Bad.<br />They're Quietly Killing Your <span className="hero__title-sm">Close Rate.</span></h1>
-                      <p>KLYRR's Conversion Killshot Engine transforms average demos into high-converting sales assets — powered by buyer psychology, AI feedback, and repeatable pitch systems.</p>
-                      <div className="hero__btn">
-                        <a href="#contact" className="btn mr-20">🧠 Run a Demo Audit</a>
-                        <a href="#system" className="btn btn-border-white">🎯 See the Killshot System</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-xxl-6 col-xl-6 col-lg-6">
-                    <div className="hero__thumb p-relative">
-                      <img src="/assets/img/hero/hero-5-2.png" alt="Demo Conversion" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Problem Section */}
-            <section className="about__area pt-120 pb-120" style={{backgroundColor: '#F8F8FF'}}>
-              <div className="container">
-                <div className="row align-items-center">
-                  <div className="col-xxl-6 col-xl-6 col-lg-6">
-                    <div className="about__thumb p-relative">
-                      <img src="/assets/img/about/about-3.jpg" alt="Demo Problems" />
-                    </div>
-                  </div>
-                  <div className="col-xxl-6 col-xl-6 col-lg-6">
-                    <div className="about__content">
-                      <div className="section__title-wrapper mb-20">
-                        <span className="section__title-pre">❌ The Problem Section</span>
-                        <h2 className="section__title">If your demos feel "fine" but deals stall,<br />it's not a lead issue — it's a <span className="section__title-sm">demo system failure.</span></h2>
-                      </div>
-                      <div className="about__text">
-                        <div className="about__list mb-40">
-                          <ul>
-                            <li><i className="fal fa-times text-danger"></i>Reps improvise value props</li>
-                            <li><i className="fal fa-times text-danger"></i>Objections handled with hope</li>
-                            <li><i className="fal fa-times text-danger"></i>Follow-ups are weak or missing</li>
-                            <li><i className="fal fa-times text-danger"></i>Founders still lead key deals</li>
-                            <li><i className="fal fa-times text-danger"></i>Coaching is random, not repeatable</li>
-                          </ul>
-                        </div>
-                        <p className="highlight-text">You're not running demos. You're surviving them.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Old Section - Remove */}
-            <div className="tp-hero-area tp-hero-five__ptb-5 p-relative grey-bg-2 fix" style={{display: 'none'}}>
+            <div className="tp-hero-area tp-hero-five__ptb-5 p-relative grey-bg-2 fix">
               <div className="tp-hero-five__shape-2">
                 <img src="/assets/img/hero/hero-circle-5-1.png" alt="" />
               </div>
@@ -207,12 +129,12 @@ export default function DemoConversionPage() {
                           <i><i className="child-2">Your <span className="child-2">Close Rate</span></i></i>
                         </h1>
                         <p className="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
-                          <strong>KLYRR's Conversion Killshot Engine</strong> transforms average demos into high-converting sales assets — powered by buyer psychology, AI feedback, and repeatable pitch systems.
+                          <strong><i className="fal fa-brain"></i> Demo Conversion Killshot:</strong> KLYRR's Conversion Killshot Engine transforms average demos into high-converting sales assets — powered by buyer psychology, AI feedback, and repeatable pitch systems.
                         </p>
                       </div>
                       <div className="tp-hero-five-btn-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                        <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#">🧠 Run a Demo Audit</a>
-                        <a className="tp-btn-grey mb-20" href="#">🎯 See the Killshot System</a>
+                        <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#contact"><i className="fal fa-brain"></i> Run a Demo Audit</a>
+                        <a className="tp-btn-grey mb-20" href="#system"><i className="fal fa-bullseye"></i> See the Killshot System</a>
                       </div>
                     </div>
                   </div>
@@ -221,12 +143,12 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Problem Section */}
-            <div className="tp-about-area pt-100 pb-100 grey-bg-3">
+            <div className="tp-about-area pt-120 pb-120 grey-bg-3">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-about-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">❌ The Problem <span>Section</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-times-circle"></i> The Problem <span>Section</span></h3>
                       <p>If your demos feel "fine" but deals stall, it's not a lead issue — it's a demo system failure.</p>
                     </div>
                   </div>
@@ -302,6 +224,7 @@ export default function DemoConversionPage() {
               </div>
             </div>
 
+
             {/* Solution Section */}
             <div className="tp-service-area tp-services-five-item-bg-color p-relative fix">
               <div className="container-fluid p-0">
@@ -310,7 +233,7 @@ export default function DemoConversionPage() {
                     <div className="tp-service-five-section-box">
                       <span className="tp-section-subtitle-5">Sales Infrastructure</span>
                       <h3 className="tp-section-title-5 pb-15">
-                        ✅ What It Does <br /><span>(Engine Breakdown)</span>
+                        <i className="fal fa-check-circle"></i> What It Does <br /><span>(Engine Breakdown)</span>
                       </h3>
                       <p className="pb-20">This isn't sales training. It's sales infrastructure — installed.<br />
                         We rebuild your sales team's execution from discovery to close, backed by AI tools and real-time feedback systems.
@@ -329,7 +252,7 @@ export default function DemoConversionPage() {
                               <img src="/assets/img/service/sv-icon-5-1.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">🔍 Call Audit</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-search"></i> Call Audit</h3>
                               <p>We score 10–20 real demos to uncover where deals stall</p>
                             </div>
                           </div>
@@ -345,7 +268,7 @@ export default function DemoConversionPage() {
                               <img src="/assets/img/service/sv-icon-5-2.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">🧠 AI Scoring</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-brain"></i> AI Scoring</h3>
                               <p>Every move tracked, benchmarked, and decoded</p>
                             </div>
                           </div>
@@ -361,7 +284,7 @@ export default function DemoConversionPage() {
                               <img src="/assets/img/service/sv-icon-5-3.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">🛠️ Narrative Rewrite</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-wrench"></i> Narrative Rewrite</h3>
                               <p>Persona-specific scripts and value drivers</p>
                             </div>
                           </div>
@@ -377,7 +300,7 @@ export default function DemoConversionPage() {
                               <img src="/assets/img/service/sv-icon-5-4.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">✍️ Objection Templates</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-pen"></i> Objection Templates</h3>
                               <p>Pre-built, psychology-based responses</p>
                             </div>
                           </div>
@@ -393,7 +316,7 @@ export default function DemoConversionPage() {
                               <img src="/assets/img/service/sv-icon-5-1.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">📬 Follow-Up Frameworks</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-mailbox"></i> Follow-Up Frameworks</h3>
                               <p>Emails + DMs that actually drive action</p>
                             </div>
                           </div>
@@ -409,7 +332,7 @@ export default function DemoConversionPage() {
                               <img src="/assets/img/service/sv-icon-5-2.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm">🎯 Live Drills</h3>
+                              <h3 className="tp-service-five-title-sm"><i className="fal fa-bullseye"></i> Live Drills</h3>
                               <p>AI roleplay systems that build muscle memory</p>
                             </div>
                           </div>
@@ -422,13 +345,13 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Pricing Tiers */}
-            <div className="tp-price-area pt-120 pb-120 grey-bg-3">
+            <div className="tp-price-area pt-120 pb-120 grey-bg-2">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-price-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">🧩 Engine <span>Tiers Table</span></h3>
-                      <p>💡 Stackable layers — remove one, lose compounding effect.</p>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-puzzle-piece"></i> Engine <span>Tiers Table</span></h3>
+                      <p><i className="fal fa-lightbulb"></i> Stackable layers — remove one, lose compounding effect.</p>
                     </div>
                   </div>
                 </div>
@@ -512,12 +435,12 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Who It's For */}
-            <div className="tp-about-area pt-100 pb-100">
+            <div className="tp-about-area pt-120 pb-120">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-about-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">🎯 Who <span>It's For</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-bullseye"></i> Who <span>It's For</span></h3>
                       <p>The leak isn't in your leads — it's in how you convert them.</p>
                     </div>
                   </div>
@@ -589,12 +512,12 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Results Section */}
-            <div className="tp-fun-fact-area tp-fun-fact-2 pt-100 pb-60 grey-bg-3">
+            <div className="tp-fun-fact-area tp-fun-fact-2 pt-120 pb-60 grey-bg-3">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-fun-fact-section-title text-center pb-60">
-                      <h4 className="tp-fun-fact-title">📊 Real Results</h4>
+                      <h4 className="tp-fun-fact-title"><i className="fal fa-chart-bar"></i> Real Results</h4>
                     </div>
                   </div>
                 </div>
@@ -643,7 +566,7 @@ export default function DemoConversionPage() {
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-plan-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">⚙️ 3-Step <span>Snapshot</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-cog"></i> 3-Step <span>Snapshot</span></h3>
                     </div>
                   </div>
                 </div>
@@ -651,7 +574,7 @@ export default function DemoConversionPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>🎧</span>
+                        <span><i className="fal fa-headphones"></i></span>
                         <h4>Demo Audit</h4>
                       </div>
                       <p>AI + expert review of real calls</p>
@@ -660,7 +583,7 @@ export default function DemoConversionPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>🔧</span>
+                        <span><i className="fal fa-wrench"></i></span>
                         <h4>Pitch System Install</h4>
                       </div>
                       <p>Rewrite scripts, slides, follow-ups</p>
@@ -669,7 +592,7 @@ export default function DemoConversionPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>📈</span>
+                        <span><i className="fal fa-chart-line"></i></span>
                         <h4>Scale the Killshot</h4>
                       </div>
                       <p>Weekly reviews + LMS make it repeatable</p>
@@ -680,7 +603,7 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Final CTA */}
-            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" data-background="/assets/img/cta/cta-bg-5-1.png">
+            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" style={{backgroundImage: 'url(/assets/img/cta/cta-bg-5-1.png)'}}>
               <div className="tp-cta-five-shape-1 d-none d-md-block">
                 <img src="/assets/img/cta/cta-shape-5-1.png" alt="" />
               </div> 
@@ -691,13 +614,13 @@ export default function DemoConversionPage() {
                 <div className="row g-0">
                   <div className="col-12">
                     <div className="tp-cta-five-section-box text-center">
-                      <span className="tp-section-subtitle-5">💣 Final CTA</span>
+                      <span className="tp-section-subtitle-5"><i className="fal fa-bomb"></i> Final CTA</span>
                       <h3 className="tp-section-title-5 pb-30">How many deals are dying in <br /><span>your current demo system?</span></h3>
                       <p className="pb-30">You don't need new tools. You need infrastructure.</p>
                       <div className="tp-cta-five-btn d-flex justify-content-center gap-3 flex-wrap">
-                        <a className="tp-btn-blue-lg circle-effect" href="#">🧠 Get a Demo Audit</a>
-                        <a className="tp-btn-yellow-lg circle-effect" href="#">📈 See the Engine in Action</a>
-                        <a className="tp-btn-grey circle-effect" href="#">⚙️ Compare Tiers</a>
+                        <a className="tp-btn-blue-lg circle-effect" href="#"><i className="fal fa-brain"></i> Get a Demo Audit</a>
+                        <a className="tp-btn-yellow-lg circle-effect" href="#"><i className="fal fa-chart-line"></i> See the Engine in Action</a>
+                        <a className="tp-btn-grey circle-effect" href="#"><i className="fal fa-cog"></i> Compare Tiers</a>
                       </div>
                     </div>
                   </div>
@@ -721,7 +644,7 @@ export default function DemoConversionPage() {
                           </a>
                         </div>
                         <div className="tp-footer__contact-info">
-                          <p>KLYRR — Modular GTM Systems for SaaS Growth<br />📍 India HQ. Serving global SaaS teams.</p>
+                          <p>KLYRR — Modular GTM Systems for SaaS Growth<br /><i className="fal fa-map-marker-alt"></i> India HQ. Serving global SaaS teams.</p>
                         </div>
                       </div>
                     </div>

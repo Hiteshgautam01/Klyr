@@ -51,7 +51,7 @@ export default function FounderSignalPage() {
                 <div className="header-bottom__right header-five__btn d-flex align-items-center justify-content-end">
                   <div className="header-bottom__btn d-flex align-items-center">
                     <a className="tp-btn-yellow inner-color tp-btn-hover alt-color-black d-none d-md-inline-block" href="#">
-                      <span className="white-text">🧠 Free GTM Diagnosis</span>
+                      <span className="white-text"><i className="fal fa-brain"></i> Free GTM Diagnosis</span>
                       <b></b>
                     </a>
                     <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars"></i></a>
@@ -86,7 +86,7 @@ export default function FounderSignalPage() {
             <div className="tpoffcanvas__info text-center">
               <h4 className="offcanva-title">we are here</h4>
               <a href="#" target="_blank">
-                📍 India HQ<br />
+                <i className="fal fa-map-marker-alt"></i> India HQ<br />
                 Serving global SaaS teams
               </a>
             </div>
@@ -132,8 +132,8 @@ export default function FounderSignalPage() {
                         </p>
                       </div>
                       <div className="tp-hero-five-btn-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                        <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#">🧠 Book My Founder Audit</a>
-                        <a className="tp-btn-grey mb-20" href="#">📣 See Real Signal Systems</a>
+                        <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#"><i className="fal fa-brain"></i> Book My Founder Audit</a>
+                        <a className="tp-btn-grey mb-20" href="#"><i className="fal fa-bullhorn"></i> See Real Signal Systems</a>
                       </div>
                     </div>
                   </div>
@@ -142,12 +142,12 @@ export default function FounderSignalPage() {
             </div>
 
             {/* Problem Section */}
-            <div className="tp-about-area pt-100 pb-100 grey-bg-3">
+            <div className="tp-about-area pt-120 pb-120 grey-bg-3">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-about-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">❌ The Problem <span>You're Tolerating</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-times-circle"></i> The Problem <span>You're Tolerating</span></h3>
                       <p>Your product works. Your GTM might even be decent. But without founder visibility:</p>
                     </div>
                   </div>
@@ -220,7 +220,7 @@ export default function FounderSignalPage() {
                     <div className="tp-service-five-section-box text-center mb-60">
                       <span className="tp-section-subtitle-5">Trust — Systemized</span>
                       <h3 className="tp-section-title-5 pb-15">
-                        🧱 What the Founder Signal <br /><span>Engine Does</span>
+                        <i className="fal fa-cube"></i> What the Founder Signal <br /><span>Engine Does</span>
                       </h3>
                       <p className="pb-40">This isn't ghostwritten fluff. It's trust — systemized.<br />
                         We engineer your founder presence to attract deals, activate buyers, and build market inevitability.
@@ -294,12 +294,12 @@ export default function FounderSignalPage() {
             </div>
 
             {/* Who It's For */}
-            <div className="tp-about-area pt-100 pb-100 grey-bg-3">
+            <div className="tp-about-area pt-120 pb-120 grey-bg-3">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-about-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">🧩 Who <span>It's For</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-puzzle-piece"></i> Who <span>It's For</span></h3>
                       <p>This isn't personal branding. It's pipeline leverage.</p>
                     </div>
                   </div>
@@ -360,12 +360,12 @@ export default function FounderSignalPage() {
             </div>
 
             {/* Results Section */}
-            <div className="tp-fun-fact-area tp-fun-fact-2 pt-100 pb-60">
+            <div className="tp-fun-fact-area tp-fun-fact-2 pt-120 pb-60">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-fun-fact-section-title text-center pb-60">
-                      <h4 className="tp-fun-fact-title">📊 Real Results</h4>
+                      <h4 className="tp-fun-fact-title"><i className="fal fa-chart-bar"></i> Real Results</h4>
                     </div>
                   </div>
                 </div>
@@ -409,12 +409,12 @@ export default function FounderSignalPage() {
             </div>
 
             {/* How It Works */}
-            <div className="tp-plan-area tp-plan-space grey-bg-3">
+            <div className="tp-plan-area tp-plan-space grey-bg-3 pt-120 pb-120">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-plan-section-box text-center mb-60">
-                      <h3 className="tp-section-title-5 text-black">⚙️ How It Works <span>(3 Steps)</span></h3>
+                      <h3 className="tp-section-title-5 text-black"><i className="fal fa-cog"></i> How It Works <span>(3 Steps)</span></h3>
                     </div>
                   </div>
                 </div>
@@ -422,7 +422,7 @@ export default function FounderSignalPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>📍</span>
+                        <span><i className="fal fa-map-marker-alt"></i></span>
                         <h4>Diagnose Signal Gap</h4>
                       </div>
                       <p>Platform, presence, narrative, and ICP alignment</p>
@@ -431,7 +431,7 @@ export default function FounderSignalPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>⚙️</span>
+                        <span><i className="fal fa-cog"></i></span>
                         <h4>Install the Engine</h4>
                       </div>
                       <p>Posts, DMs, podcasts, visuals, newsletter, trust assets</p>
@@ -440,7 +440,7 @@ export default function FounderSignalPage() {
                   <div className="col-xl-4 col-lg-4">
                     <div className="tp-plan-step-item text-center mb-40">
                       <div className="tp-plan-step-icon mb-30">
-                        <span>📈</span>
+                        <span><i className="fal fa-chart-line"></i></span>
                         <h4>Watch It Compound</h4>
                       </div>
                       <p>More reach → more trust → more replies → more deals</p>
@@ -451,7 +451,7 @@ export default function FounderSignalPage() {
             </div>
 
             {/* Final CTA */}
-            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" data-background="/assets/img/cta/cta-bg-5-1.png">
+            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" style={{backgroundImage: 'url(/assets/img/cta/cta-bg-5-1.png)'}}>
               <div className="tp-cta-five-shape-1 d-none d-md-block">
                 <img src="/assets/img/cta/cta-shape-5-1.png" alt="" />
               </div> 
@@ -462,15 +462,15 @@ export default function FounderSignalPage() {
                 <div className="row g-0">
                   <div className="col-12">
                     <div className="tp-cta-five-section-box text-center">
-                      <span className="tp-section-subtitle-5">🧠 Final CTA</span>
+                      <span className="tp-section-subtitle-5"><i className="fal fa-brain"></i> Final CTA</span>
                       <h3 className="tp-section-title-5 pb-30">If your company feels invisible, <br /><span>ask this:</span></h3>
                       <p className="pb-30">Is your founder signal pulling any weight?<br />
                       Buyers follow founders. Founders who show up win.<br />
                       Those who don't? Quietly fall behind.</p>
                       <div className="tp-cta-five-btn d-flex justify-content-center gap-3 flex-wrap">
-                        <a className="tp-btn-blue-lg circle-effect" href="#">🧠 Book My Audit</a>
-                        <a className="tp-btn-yellow-lg circle-effect" href="#">📣 See Signal Systems</a>
-                        <a className="tp-btn-grey circle-effect" href="#">⚙️ Build the Engine</a>
+                        <a className="tp-btn-blue-lg circle-effect" href="#"><i className="fal fa-brain"></i> Book My Audit</a>
+                        <a className="tp-btn-yellow-lg circle-effect" href="#"><i className="fal fa-bullhorn"></i> See Signal Systems</a>
+                        <a className="tp-btn-grey circle-effect" href="#"><i className="fal fa-cog"></i> Build the Engine</a>
                       </div>
                     </div>
                   </div>
@@ -494,7 +494,7 @@ export default function FounderSignalPage() {
                           </a>
                         </div>
                         <div className="tp-footer__contact-info">
-                          <p>KLYRR — Modular GTM Systems for SaaS Growth<br />📍 India HQ. Serving global SaaS teams.</p>
+                          <p>KLYRR — Modular GTM Systems for SaaS Growth<br /><i className="fal fa-map-marker-alt"></i> India HQ. Serving global SaaS teams.</p>
                         </div>
                       </div>
                     </div>

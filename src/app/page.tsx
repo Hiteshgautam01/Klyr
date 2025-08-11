@@ -10,102 +10,20 @@ export default function Home() {
       preloader.style.display = 'none'
     }
 
-    // Load scripts with detailed error handling and debugging
-    const loadScript = (src: string) => {
-      return new Promise<void>((resolve, reject) => {
-        if (document.querySelector(`script[src="${src}"]`)) {
-          console.log(`Script already loaded: ${src}`)
-          resolve()
-          return
-        }
-
-        console.log(`Loading script: ${src}`)
-        const script = document.createElement('script')
-        script.src = src
-        script.onload = () => {
-          console.log(`Successfully loaded: ${src}`)
-          resolve()
-        }
-        script.onerror = () => {
-          console.error(`Failed to load: ${src}`)
-          resolve() // Continue even if script fails
-        }
-        document.head.appendChild(script)
-      })
-    }
-
-    // Load scripts with proper dependency management
-    const loadScripts = async () => {
-      try {
-        // Phase 1: Load jQuery and wait for it to be available
-        await loadScript('/assets/js/jquery.js')
-        
-        // Wait for jQuery to be fully available
-        while (typeof (window as any).$ === 'undefined') {
-          await new Promise(resolve => setTimeout(resolve, 50))
-        }
-        console.log('jQuery is ready')
-        
-        // Phase 2: Load ALL plugins that main.js depends on
-        await loadScript('/assets/js/bootstrap.bundle.min.js')
-        await loadScript('/assets/js/meanmenu.js')
-        await loadScript('/assets/js/magnific-popup.js')
-        await loadScript('/assets/js/counterup.js')
-        await loadScript('/assets/js/waypoints.js')
-        await loadScript('/assets/js/slick.min.js')
-        await loadScript('/assets/js/nice-select.js')
-        await loadScript('/assets/js/tilt.jquery.js')
-        await loadScript('/assets/js/isotope-pkgd.js')
-        await loadScript('/assets/js/imagesloaded-pkgd.js')
-        
-        // CRITICAL: Load GSAP and related before main.js since main.js depends on them
-        await loadScript('/assets/js/gsap.min.js')
-        await loadScript('/assets/js/ScrollTrigger.min.js')
-        await loadScript('/assets/js/ScrollSmoother.min.js')
-        await loadScript('/assets/js/split-text.min.js')
-        
-        // CRITICAL: Load Swiper BEFORE main.js since main.js depends on it
-        await loadScript('/assets/js/swiper-bundle.js')
-        
-        // Wait for all plugins to register with jQuery and Swiper to be available
-        await new Promise(resolve => setTimeout(resolve, 300))
-        
-        // Wait for Swiper to be fully available
-        while (typeof (window as any).Swiper === 'undefined') {
-          await new Promise(resolve => setTimeout(resolve, 50))
-        }
-        console.log('Swiper is ready')
-        
-        // Wait for GSAP to be fully available
-        while (typeof (window as any).gsap === 'undefined') {
-          await new Promise(resolve => setTimeout(resolve, 50))
-        }
-        console.log('GSAP is ready')
-        
-        console.log('All main.js dependencies loaded')
-        
-        // Phase 3: Load main.js now that dependencies are ready
-        await loadScript('/assets/js/main.js')
-        
-        // Phase 4: Load additional enhancement scripts in background
-        setTimeout(async () => {
-          await loadScript('/assets/js/wow.js')
-          await loadScript('/assets/js/parallax-scroll.js')
-          
-          // Initialize WOW animations
-          setTimeout(() => {
-            if (typeof window !== 'undefined' && (window as any).WOW) {
-              new (window as any).WOW().init()
-            }
-          }, 100)
-        }, 500)
-        
-      } catch (error) {
-        console.error('Script loading error:', error)
+    // Wait for scripts to be loaded by ScriptLoader
+    const handleScriptsLoaded = () => {
+      console.log('All scripts loaded')
+      // Initialize any specific components that need manual initialization
+      if (typeof window !== 'undefined' && (window as any).WOW) {
+        new (window as any).WOW().init()
       }
     }
 
-    loadScripts()
+    window.addEventListener('scriptsLoaded', handleScriptsLoaded)
+
+    return () => {
+      window.removeEventListener('scriptsLoaded', handleScriptsLoaded)
+    }
   }, [])
   return (
     <>
@@ -163,7 +81,7 @@ export default function Home() {
                 <div className="header-bottom__right header-five__btn d-flex align-items-center justify-content-end">
                   <div className="header-bottom__btn d-flex align-items-center">
                     <a className="tp-btn-yellow inner-color tp-btn-hover alt-color-black d-none d-md-inline-block" href="#">
-                      <span className="white-text">🧠 Free GTM Diagnosis</span>
+                      <span className="white-text"><i className="fal fa-brain"></i> Free GTM Diagnosis</span>
                       <b></b>
                     </a>
                     <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars"></i></a>
@@ -198,7 +116,7 @@ export default function Home() {
             <div className="tpoffcanvas__info text-center">
               <h4 className="offcanva-title">we are here</h4>
               <a href="#" target="_blank">
-                📍 India HQ<br />
+                <i className="fal fa-map-marker-alt"></i> India HQ<br />
                 Serving global SaaS teams
               </a>
             </div>
@@ -232,7 +150,7 @@ export default function Home() {
               </div>
               <div className="container">
                 <div className="row align-items-center">
-                  <div className="col-xl-7 col-lg-6 order-2">
+                  <div className="col-xl-7 col-lg-6 order-2 order-lg-0">
                     <div className="tp-hero-five-section-wrap">
                       <div className="tp-hero-five-section-box z-index">
                         <h3 className="tp-hero-title-5 hero-text-anim-2">
@@ -250,55 +168,24 @@ export default function Home() {
                           <i><i className="child-2"><span className="child-2">Flatlined</span> — And <br /></i></i>
                           <i><i className="child-2">You're the Last to Know?</i></i>
                         </h3>
-                        <p>
+                        <p className="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
                           Leads "look fine." Metrics seem "okay." But CAC climbs, deals stall, and ghosting grows.<br />
-                          It's not your funnel. It's your foundation.<br />
                           <strong>KLYRR installs plug-and-play GTM engines</strong> that drive pipeline, conversions, and expansion — in <strong>days</strong>, not quarters.
                         </p>
                       </div>
-                      <div className="tp-hero-five-btn-box d-flex align-items-center">
-                        <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#">🚨 Fix My Funnel</a>
-                        <a className="tp-btn-grey mb-20" href="#">🔍 Show Me My Leaks</a>
+                      <div className="tp-hero-five-btn-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                        <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#"><i className="fal fa-exclamation-triangle"></i> Fix My Funnel</a>
+                        <a className="tp-btn-grey mb-20" href="#"><i className="fal fa-search"></i> Show Me My Leaks</a>
                       </div>
-                      <div className="tp-hero-stats d-flex align-items-center">
-                        <span className="mr-30">✅ 150+ SQLs in 90 days</span>
-                        <span>✅ $390K revenue lift</span>
+                      <div className="tp-hero-stats d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+                        <span className="mr-30"><i className="fal fa-check-circle"></i> 150+ SQLs in 90 days</span>
+                        <span><i className="fal fa-check-circle"></i> $390K revenue lift</span>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="tp-hero-five-2-thumb-main p-relative">
-                <div className="tp-hero-five-2-thumb">
-                  <img className="tp-hero-five-2-thumb-inner" src="/assets/img/hero/hero-shape-5-1-1.png" alt="" />
-                </div>
-                <div className="tp-hero-five-2-sub-img-1 d-none d-md-block">
-                  <img src="/assets/img/hero/home-shape-1-1.png" alt="" />
-                </div>
-                <div className="tp-hero-five-2-sub-img-2 d-none d-md-block">
-                  <img src="/assets/img/hero/home-shape-1-2.png" alt="" />
-                </div>
-              </div>
-            </div>
-
-            {/* Video Section */}
-            <div className="tp-vedio-area p-relative pt-120">
-              <div className="container-fluid">
-                <div className="row justify-content-center">
-                  <div className="col-xl-10">
-                    <div className="tp-vedio-sction-box pb-70">
-                      <h4 className="tp-vedio-title">
-                        Stop guessing. KLYRR audits your funnel <br />
-                        and exposes the exact leaks — from <br />
-                        ICP misfires to CRM bloat
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-12">
-                    <div className="tp-vedio-wrap">
-                      <video className="play-video" id="myVideo" autoPlay loop controls>
+                  <div className="col-xl-5 col-lg-6 order-1 order-lg-0">
+                    <div className="tp-hero-five-video-wrap">
+                      <video className="tp-hero-video" autoPlay loop muted playsInline>
                         <source src="/assets/img/herovideo.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
@@ -308,8 +195,9 @@ export default function Home() {
               </div>
             </div>
 
+
             {/* Wins That Compound */}
-            <div className="tp-fun-fact-area tp-fun-fact-2 pt-100 pb-60">
+            <div className="tp-fun-fact-area tp-fun-fact-2 pt-120 pb-60">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
@@ -344,7 +232,7 @@ export default function Home() {
             {/* Service Area - Four Pillars */}
             <div className="tp-service-area tp-services-five-item-bg-color p-relative fix">
               <div className="container-fluid p-0">
-                <div className="tp-service-five-bg" data-background="/assets/img/service/service-5-1-bg.png"></div>
+                <div className="tp-service-five-bg" style={{backgroundImage: 'url(/assets/img/service/service-5-1-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
                 <div className="row g-0 align-items-center">
                   <div className="col-lg-6">
                     <div className="tp-service-five-section-box">
@@ -356,7 +244,7 @@ export default function Home() {
                       <p className="pb-20">Choose from 6 modular GTM systems — built to fix <br />
                         specific choke points.
                       </p>
-                      <a className="tp-btn-yellow-lg text-black" href="#">📦 Explore the Engines</a>
+                      <a className="tp-btn-yellow-lg text-black" href="#"><i className="fal fa-box"></i> Explore the Engines</a>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -371,7 +259,7 @@ export default function Home() {
                               <img src="/assets/img/service/sv-icon-5-1.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm"><a href="#">🔍 Diagnose <br />Fast</a></h3>
+                              <h3 className="tp-service-five-title-sm"><a href="#"><i className="fal fa-search"></i> Diagnose <br />Fast</a></h3>
                               <p>Uncover where your funnel leaks — before burning more budget.</p>
                             </div>
                           </div>
@@ -390,7 +278,7 @@ export default function Home() {
                               <img src="/assets/img/service/sv-icon-5-2.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm"><a href="#">⚙️ Plug In <br />Growth Engines</a></h3>
+                              <h3 className="tp-service-five-title-sm"><a href="#"><i className="fal fa-cog"></i> Plug In <br />Growth Engines</a></h3>
                               <p>Choose from 6 modular GTM systems — built to fix specific choke points.</p>
                             </div>
                           </div>
@@ -409,7 +297,7 @@ export default function Home() {
                               <img src="/assets/img/service/sv-icon-5-3.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm"><a href="#">🧠 Expert <br />Deployment</a></h3>
+                              <h3 className="tp-service-five-title-sm"><a href="#"><i className="fal fa-brain"></i> Expert <br />Deployment</a></h3>
                               <p>We install everything: copy, workflows, automations, scoring — zero fluff.</p>
                             </div>
                           </div>
@@ -428,7 +316,7 @@ export default function Home() {
                               <img src="/assets/img/service/sv-icon-5-4.png" alt="" />
                             </div>
                             <div className="tp-service-five-content">
-                              <h3 className="tp-service-five-title-sm"><a href="#">💥 Results Without <br />Hiring</a></h3>
+                              <h3 className="tp-service-five-title-sm"><a href="#"><i className="fal fa-rocket"></i> Results Without <br />Hiring</a></h3>
                               <p>No retainers. No headcount. Just outcomes — compounding from week one.</p>
                             </div>
                           </div>
@@ -566,7 +454,7 @@ export default function Home() {
             </div>
 
             {/* Testimonials - Original HTML Structure */}
-            <div className="tp-testimonial-area pt-130 pb-130 fix" data-background="/assets/img/testimonial/testi-bg-5-1.jpg">
+            <div className="tp-testimonial-area pt-130 pb-130 fix" style={{backgroundImage: 'url(/assets/img/testimonial/testi-bg-5-1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
               <div className="container">
                 <div className="row align-items-end tp-testimonial-five-section-space">
                   <div className="col-md-8">
@@ -885,6 +773,29 @@ export default function Home() {
               </div>
             </div>
 
+            {/* CTA Area */}
+            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" style={{backgroundImage: 'url(/assets/img/cta/cta-bg-5-1.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+              <div className="tp-cta-five-shape-1 d-none d-md-block">
+                <img src="/assets/img/cta/cta-shape-5-1.png" alt="" />
+              </div> 
+              <div className="tp-cta-five-shape-2 d-none d-md-block">
+                <img src="/assets/img/cta/cta-shape-5-2.png" alt="" />
+              </div> 
+              <div className="container-fluid g-0">
+                <div className="row g-0">
+                  <div className="col-12">
+                    <div className="tp-cta-five-section-box text-center">
+                      <span className="tp-section-subtitle-5">All-in-one GTM Operating System</span>
+                      <h3 className="tp-section-title-5 pb-30">Supercharge Your Growing <br /> <span>SaaS Business</span> </h3>
+                      <div className="tp-cta-five-btn">
+                        <a className="tp-btn-yellow-lg circle-effect" href="#">Get Started Free</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </main>
 
           {/* Footer */}
@@ -901,9 +812,9 @@ export default function Home() {
                           </a>
                         </div>
                         <div className="tp-footer__contact-info">
-                          <p>KLYRR — Modular GTM Systems for SaaS Growth<br />📍 India HQ. Serving global SaaS teams.</p>
+                          <p>KLYRR — Modular GTM Systems for SaaS Growth<br /><i className="fal fa-map-marker-alt"></i> India HQ. Serving global SaaS teams.</p>
                           <div className="tp-footer__contact-mail">
-                            <span>📬 contact@klyrr.com</span>
+                            <span><i className="fal fa-mailbox"></i> contact@klyrr.com</span>
                           </div>
                         </div>
                       </div>
@@ -931,8 +842,8 @@ export default function Home() {
                             <li><a href="/about">About</a></li>
                             <li><a href="/pricing">Pricing</a></li>
                             <li><a href="/contact">Contact</a></li>
-                            <li><a href="#">📜 Privacy Policy</a></li>
-                            <li><a href="#">📄 Terms of Service</a></li>
+                            <li><a href="#"><i className="fal fa-scroll"></i> Privacy Policy</a></li>
+                            <li><a href="#"><i className="fal fa-file-alt"></i> Terms of Service</a></li>
                           </ul>
                         </div>
                       </div>
