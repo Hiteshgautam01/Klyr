@@ -53,48 +53,29 @@ export default function PageLayout({ children }: PageLayoutProps) {
               <div className="col-xxl-8 col-xl-7 col-lg-8 d-none d-lg-block">
                 <div className="header-bottom__main-menu header-bottom__main-menu-5 text-center">
                   <nav id="mobile-menu">
-                    <ul>
+                  <ul>
                       <li>
                         <a href="#">GTM Engines</a>
                         <ul className="submenu">
-                          <li><Link href="/products/zero-to-pipeline">Zero-to-Pipeline Engine</Link></li>
-                          <li><Link href="/products/demo-conversion">Demo Conversion Killshot</Link></li>
-                          <li><Link href="/products/inbound-magnet">Inbound Magnet Engine</Link></li>
-                          <li><Link href="/products/founder-signal">Founder Signal Engine</Link></li>
-                          <li><Link href="/products/land-expand">Land & Expand Engine</Link></li>
-                          <li><Link href="/products/sales-transition">Sales Transition System</Link></li>
+                          <li><a href="/products/zero-to-pipeline">Zero-to-Pipeline Engine</a></li>
+                          <li><a href="/products/demo-conversion">Demo Conversion Killshot</a></li>
+                          <li><a href="/products/inbound-magnet">Inbound Magnet Engine</a></li>
+                          <li><a href="/products/founder-signal">Founder Signal Engine</a></li>
+                          <li><a href="/products/land-expand">Land & Expand Engine</a></li>
+                          <li><a href="/products/sales-transition">Sales Transition System</a></li>
                         </ul>
                       </li>
-                      <li>
-                        <a href="#">Pages</a>
+                      <li><a href="/about">About</a></li>
+                      <li><a href="/pricing">Pricing</a></li>
+                      <li><a href="/resources">Resources</a>
                         <ul className="submenu">
-                          <li><Link href="/about">About</Link></li>
-                          <li><Link href="/service">Service</Link></li>
-                          <li><Link href="/service/details">Service Details</Link></li>
-                          <li><Link href="/team">Team</Link></li>
-                          <li><Link href="/team/details">Team Details</Link></li>
-                          <li><Link href="/career">Career</Link></li>
-                          <li><Link href="/career/details">Career Details</Link></li>
-                          <li><Link href="/integrations">Integrations</Link></li>
+                          <li><a href="/resources/blog">Blog</a></li>
+                          <li><a href="/resources/case-studies">Case Studies</a></li>
+                          <li><a href="/resources/ebooks">Ebooks</a></li>
+                          <li><a href="/resources/videos">Videos</a></li>
                         </ul>
                       </li>
-                      <li>
-                        <a href="#">Portfolio</a>
-                        <ul className="submenu">
-                          <li><Link href="/project">Project</Link></li>
-                          <li><Link href="/project/details">Project Details</Link></li>
-                        </ul>
-                      </li>
-                      <li><Link href="/pricing">Pricing</Link></li>
-                      <li>
-                        <a href="#">Blog</a>
-                        <ul className="submenu">
-                          <li><Link href="/blog">Blog</Link></li>
-                          <li><Link href="/blog/list">Blog List</Link></li>
-                          <li><Link href="/blog/details">Blog Details</Link></li>
-                        </ul>
-                      </li>
-                      <li><Link href="/contact">Contact</Link></li>
+                      <li><a href="/contact">Contact</a></li>
                     </ul>
                   </nav>
                 </div>

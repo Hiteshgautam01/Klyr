@@ -72,6 +72,14 @@ export default function Home() {
                       </li>
                       <li><a href="/about">About</a></li>
                       <li><a href="/pricing">Pricing</a></li>
+                      <li><a href="/resources">Resources</a>
+                      <ul className="submenu">
+                          <li><a href="/resources/blog">Blog</a></li>
+                          <li><a href="/resources/case-studies">Case Studies</a></li>
+                          <li><a href="/resources/ebooks">Ebooks</a></li>
+                          <li><a href="/resources/videos">Videos</a></li>
+                        </ul>
+                      </li>
                       <li><a href="/contact">Contact</a></li>
                     </ul>
                   </nav>
@@ -80,10 +88,6 @@ export default function Home() {
               <div className="col-xxl-2 col-xl-3 col-lg-2 col-md-8 col-6">
                 <div className="header-bottom__right header-five__btn d-flex align-items-center justify-content-end">
                   <div className="header-bottom__btn d-flex align-items-center">
-                    <a className="tp-btn-yellow inner-color tp-btn-hover alt-color-black d-none d-md-inline-block" href="#">
-                      <span className="white-text"><i className="fal fa-brain"></i> Free GTM Diagnosis</span>
-                      <b></b>
-                    </a>
                     <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars"></i></a>
                   </div>
                 </div>
@@ -168,16 +172,16 @@ export default function Home() {
                           <i><i className="child-2"><span className="child-2">Flatlined</span> — And <br /></i></i>
                           <i><i className="child-2">You're the Last to Know?</i></i>
                         </h3>
-                        <p className="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
+                        <p className="hero-text-animate" style={{animationDelay: '0.5s'}}>
                           Leads "look fine." Metrics seem "okay." But CAC climbs, deals stall, and ghosting grows.<br />
                           <strong>KLYRR installs plug-and-play GTM engines</strong> that drive pipeline, conversions, and expansion — in <strong>days</strong>, not quarters.
                         </p>
                       </div>
-                      <div className="tp-hero-five-btn-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                      <div className="tp-hero-five-btn-box d-flex align-items-center hero-btn-animate" style={{animationDelay: '0.7s'}}>
                         <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#"><i className="fal fa-exclamation-triangle"></i> Fix My Funnel</a>
                         <a className="tp-btn-grey mb-20" href="#"><i className="fal fa-search"></i> Show Me My Leaks</a>
                       </div>
-                      <div className="tp-hero-stats d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+                      <div className="tp-hero-stats d-flex align-items-center hero-stats-animate" style={{animationDelay: '0.9s'}}>
                         <span className="mr-30"><i className="fal fa-check-circle"></i> 150+ SQLs in 90 days</span>
                         <span><i className="fal fa-check-circle"></i> $390K revenue lift</span>
                       </div>
