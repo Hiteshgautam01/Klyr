@@ -338,6 +338,27 @@
   opacity: 1;
 }
 
+/* Hero section animations - immediate and reliable */
+.hero-text-animate,
+.hero-btn-animate,
+.hero-stats-animate {
+  animation: tpfadeUp 0.9s ease-out forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.hero-text-animate {
+  animation-delay: 0.5s;
+}
+
+.hero-btn-animate {
+  animation-delay: 0.7s;
+}
+
+.hero-stats-animate {
+  animation-delay: 0.9s;
+}
+
 /* Fallback animations */
 @keyframes fadeIn {
   from {
