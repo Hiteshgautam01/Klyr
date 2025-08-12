@@ -157,7 +157,7 @@ export default function Home() {
                   <div className="col-xl-7 col-lg-6 order-2 order-lg-0">
                     <div className="tp-hero-five-section-wrap">
                       <div className="tp-hero-five-section-box z-index">
-                        <h3 className="tp-hero-title-5 hero-text-anim-2">
+                        <h3 className="tp-hero-title-5 hero-text-anim-2" style={{fontSize: '3rem'}}>
                           <i><i className="child-2">What If Your <br /></i></i>
                           <i>
                             <i className="child-2">
@@ -179,7 +179,7 @@ export default function Home() {
                       </div>
                       <div className="tp-hero-five-btn-box d-flex align-items-center hero-btn-animate" style={{animationDelay: '0.7s'}}>
                         <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect mr-15 mb-20" href="#"><i className="fal fa-exclamation-triangle"></i> Fix My Funnel</a>
-                        <a className="tp-btn-grey mb-20" href="#"><i className="fal fa-search"></i> Show Me My Leaks</a>
+                        <a className="tp-btn-grey mb-20" href="#"><i className="fal fa-search"></i> Join the Waitlist</a>
                       </div>
                       <div className="tp-hero-stats d-flex align-items-center hero-stats-animate" style={{animationDelay: '0.9s'}}>
                         <span className="mr-30"><i className="fal fa-check-circle"></i> 150+ SQLs in 90 days</span>
@@ -200,19 +200,81 @@ export default function Home() {
             </div>
 
 
+            {/* Integration Area - Original HTML Structure */}
+            <div className="tp-intigration-area tp-intigration-five-space fix" style={{overflow:'visible'}}>
+              <div className="container">
+                <div className="row">
+                  <div className="col-12">
+                    <div className="tp-intigration-five-wrapper p-relative">
+                      <div className="tp-intigration-five-section-box text-center">
+                        <h3 className="tp-section-title-5 pb-10 text-black"><span>Featured</span> <br /> Across Global SaaS Teams</h3>
+                        <p>KLYRR has been trusted by growing SaaS companies <br /> across the world to fix their GTM operations.</p>
+                        <div className="tp-intigration-five-btn">
+                          <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect" href="#">Explore All</a>
+                        </div>
+                      </div>
+                      <div className="tp-intigration-five-circle-img-1 tp-zoom-thumb d-none d-lg-block">
+                        <img src="/assets/img/feature/fea-circle-5-1.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-2 tp-zoom-thumb d-none d-md-block">
+                        <img src="/assets/img/feature/fea-circle-5-2.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-3 tp-zoom-thumb d-none d-lg-block">
+                        <img src="/assets/img/feature/fea-circle-5-3.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-4 tp-zoom-thumb d-none d-md-block">
+                        <img src="/assets/img/feature/fea-circle-5-4.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-5 tp-zoom-thumb d-none d-md-block">
+                        <img src="/assets/img/feature/fea-circle-5-5.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-6 tp-zoom-thumb d-none d-lg-block">
+                        <img src="/assets/img/feature/fea-circle-5-6.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-7 tp-zoom-thumb d-none d-lg-block">
+                        <img src="/assets/img/feature/fea-circle-5-7.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-8 tp-zoom-thumb d-none d-lg-block">
+                        <img src="/assets/img/feature/fea-circle-5-8.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-9 tp-zoom-thumb d-none d-md-block">
+                        <img src="/assets/img/feature/fea-circle-5-9.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-10 tp-zoom-thumb d-none d-md-block">
+                        <img src="/assets/img/feature/fea-circle-5-10.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-11 tp-zoom-thumb">
+                        <img src="/assets/img/feature/fea-circle-5-11.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-12 tp-zoom-thumb">
+                        <img src="/assets/img/feature/fea-circle-5-12.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-13 tp-zoom-thumb">
+                        <img src="/assets/img/feature/fea-circle-5-13.png" alt="" />
+                      </div>
+                      <div className="tp-intigration-five-circle-img-14 tp-zoom-thumb">
+                        <img src="/assets/img/feature/fea-circle-5-14.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
             {/* Wins That Compound */}
             <div className="tp-fun-fact-area tp-fun-fact-2 pt-120 pb-60">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
                     <div className="tp-fun-fact-section-title text-center pb-60">
-                      <h4 className="tp-fun-fact-title">Wins That Compound Across SaaS Teams</h4>
+                      <h4 className="tp-fun-fact-title" style={{fontSize: '2rem', fontWeight: 'bold'}}>Wins That Compound Across SaaS Teams</h4>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-60 tp-counter-br">
-                    <div className="tp-fun-fact-item bg-color-1 tp-fun-fact-space-1 d-flex align-items-center">
+                    <div className="tp-fun-fact-item bg-color-1 tp-fun-fact-space-1 d-flex align-items-center" style={{paddingLeft: '70px'}}>
                       <h4>44<span>%</span></h4>
                       <p>Demo Close <br /> Rate</p>
                     </div>
@@ -248,7 +310,7 @@ export default function Home() {
                       <p className="pb-20">Choose from 6 modular GTM systems — built to fix <br />
                         specific choke points.
                       </p>
-                      <a className="tp-btn-yellow-lg text-black" href="#"><i className="fal fa-box"></i> Explore the Engines</a>
+                      <a className="tp-btn-yellow-lg text-black" href="#"><i className="fal fa-box"></i> Join the Waitlist</a>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -716,69 +778,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Integration Area - Original HTML Structure */}
-            <div className="tp-intigration-area tp-intigration-five-space fix">
-              <div className="container">
-                <div className="row">
-                  <div className="col-12">
-                    <div className="tp-intigration-five-wrapper p-relative">
-                      <div className="tp-intigration-five-section-box text-center">
-                        <h3 className="tp-section-title-5 pb-10 text-black"><span>Featured</span> <br /> Across Global SaaS Teams</h3>
-                        <p>KLYRR has been trusted by growing SaaS companies <br /> across the world to fix their GTM operations.</p>
-                        <div className="tp-intigration-five-btn">
-                          <a className="tp-btn-blue-lg tp-btn-hover alt-color-black circle-effect" href="#">Explore All</a>
-                        </div>
-                      </div>
-                      <div className="tp-intigration-five-circle-img-1 tp-zoom-thumb d-none d-lg-block">
-                        <img src="/assets/img/feature/fea-circle-5-1.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-2 tp-zoom-thumb d-none d-md-block">
-                        <img src="/assets/img/feature/fea-circle-5-2.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-3 tp-zoom-thumb d-none d-lg-block">
-                        <img src="/assets/img/feature/fea-circle-5-3.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-4 tp-zoom-thumb d-none d-md-block">
-                        <img src="/assets/img/feature/fea-circle-5-4.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-5 tp-zoom-thumb d-none d-md-block">
-                        <img src="/assets/img/feature/fea-circle-5-5.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-6 tp-zoom-thumb d-none d-lg-block">
-                        <img src="/assets/img/feature/fea-circle-5-6.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-7 tp-zoom-thumb d-none d-lg-block">
-                        <img src="/assets/img/feature/fea-circle-5-7.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-8 tp-zoom-thumb d-none d-lg-block">
-                        <img src="/assets/img/feature/fea-circle-5-8.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-9 tp-zoom-thumb d-none d-md-block">
-                        <img src="/assets/img/feature/fea-circle-5-9.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-10 tp-zoom-thumb d-none d-md-block">
-                        <img src="/assets/img/feature/fea-circle-5-10.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-11 tp-zoom-thumb">
-                        <img src="/assets/img/feature/fea-circle-5-11.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-12 tp-zoom-thumb">
-                        <img src="/assets/img/feature/fea-circle-5-12.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-13 tp-zoom-thumb">
-                        <img src="/assets/img/feature/fea-circle-5-13.png" alt="" />
-                      </div>
-                      <div className="tp-intigration-five-circle-img-14 tp-zoom-thumb">
-                        <img src="/assets/img/feature/fea-circle-5-14.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* CTA Area */}
-            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" style={{backgroundImage: 'url(/assets/img/cta/cta-bg-5-1.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+            <div className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" style={{backgroundImage: 'url(/assets/img/cta/cta-bg-5-1.png)', backgroundSize: 'cover', backgroundPosition: 'center', marginTop: '100px'}}>
               <div className="tp-cta-five-shape-1 d-none d-md-block">
                 <img src="/assets/img/cta/cta-shape-5-1.png" alt="" />
               </div> 
@@ -792,7 +793,7 @@ export default function Home() {
                       <span className="tp-section-subtitle-5">All-in-one GTM Operating System</span>
                       <h3 className="tp-section-title-5 pb-30">Supercharge Your Growing <br /> <span>SaaS Business</span> </h3>
                       <div className="tp-cta-five-btn">
-                        <a className="tp-btn-yellow-lg circle-effect" href="#">Get Started Free</a>
+                        <a className="tp-btn-yellow-lg circle-effect" href="#">Join the Waitlist</a>
                       </div>
                     </div>
                   </div>
