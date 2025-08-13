@@ -61,23 +61,23 @@ export default function Home() {
                     <ul>
                       <li>
                         <a href="#">GTM Engines</a>
-                        <ul className="submenu">
-                          <li><a href="/products/zero-to-pipeline">Zero-to-Pipeline Engine</a></li>
-                          <li><a href="/products/demo-conversion">Demo Conversion Killshot</a></li>
-                          <li><a href="/products/inbound-magnet">Inbound Magnet Engine</a></li>
-                          <li><a href="/products/founder-signal">Founder Signal Engine</a></li>
-                          <li><a href="/products/land-expand">Land & Expand Engine</a></li>
-                          <li><a href="/products/sales-transition">Sales Transition System</a></li>
+                        <ul className="submenu" style={{ padding: '2px 0px' }}>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/zero-to-pipeline">Zero-to-Pipeline Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/demo-conversion">Demo Conversion Killshot</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/inbound-magnet">Inbound Magnet Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/founder-signal">Founder Signal Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/land-expand">Land & Expand Engine</a></li>
+                          <li style={{ marginBottom: '0px' }}><a href="/products/sales-transition">Sales Transition System</a></li>
                         </ul>
                       </li>
                       <li><a href="/about">About</a></li>
                       <li><a href="/pricing">Pricing</a></li>
                       <li><a href="/resources">Resources</a>
-                      <ul className="submenu">
-                          <li><a href="/resources/blog">Blog</a></li>
-                          <li><a href="/resources/case-studies">Case Studies</a></li>
-                          <li><a href="/resources/ebooks">Ebooks</a></li>
-                          <li><a href="/resources/videos">Videos</a></li>
+                      <ul className="submenu" style={{ padding: '2px 0px' }}>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/blog">Blog</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/case-studies">Case Studies</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/ebooks">Ebooks</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/videos">Videos</a></li>
                         </ul>
                       </li>
                       <li><a href="/contact">Contact</a></li>
