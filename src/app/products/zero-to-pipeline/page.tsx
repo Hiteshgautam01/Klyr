@@ -139,7 +139,7 @@ export default function ZeroToPipelinePage() {
                       <div className="tp-hero-five-section-wrap">
                         <div className="tp-hero-five-section-box z-index">
                           <span className="tp-hero-subtitle-5 mb-20"><i className="fal fa-fire"></i> Zero-to-Pipeline Engine</span>
-                                                     <h1 className="tp-hero-title-5 hero-text-anim-2" style={{fontSize: '3rem', animationDelay: '0.2s'}}>
+                            <h1 className="tp-hero-title-5 hero-text-anim-2" style={{fontSize: '3rem', animationDelay: '0.2s'}}>
                             <i><i className="child-2">You Don't Need More Leads. <br /></i></i>
                             <i><i className="child-2">You Need Pipeline That <span className="child-1 p-relative">Converts</span></i></i>
                           </h1>

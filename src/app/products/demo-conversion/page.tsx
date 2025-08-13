@@ -31,17 +31,25 @@ export default function DemoConversionPage() {
                     <ul>
                       <li>
                         <a href="#">GTM Engines</a>
-                        <ul className="submenu">
-                          <li><a href="/products/zero-to-pipeline">Zero-to-Pipeline Engine</a></li>
-                          <li><a href="/products/demo-conversion">Demo Conversion Killshot</a></li>
-                          <li><a href="/products/inbound-magnet">Inbound Magnet Engine</a></li>
-                          <li><a href="/products/founder-signal">Founder Signal Engine</a></li>
-                          <li><a href="/products/land-expand">Land & Expand Engine</a></li>
-                          <li><a href="/products/sales-transition">Sales Transition System</a></li>
+                        <ul className="submenu" style={{ padding: '2px 0px' }}>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/zero-to-pipeline">Zero-to-Pipeline Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/demo-conversion">Demo Conversion Killshot</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/inbound-magnet">Inbound Magnet Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/founder-signal">Founder Signal Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/land-expand">Land & Expand Engine</a></li>
+                          <li style={{ marginBottom: '0px' }}><a href="/products/sales-transition">Sales Transition System</a></li>
                         </ul>
                       </li>
                       <li><a href="/about">About</a></li>
                       <li><a href="/pricing">Pricing</a></li>
+                      <li><a href="/resources">Resources</a>
+                        <ul className="submenu" style={{ padding: '2px 0px' }}>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/blog">Blog</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/case-studies">Case Studies</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/ebooks">Ebooks</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/videos">Videos</a></li>
+                        </ul>
+                      </li>
                       <li><a href="/contact">Contact</a></li>
                     </ul>
                   </nav>
@@ -50,10 +58,7 @@ export default function DemoConversionPage() {
               <div className="col-xxl-2 col-xl-3 col-lg-2 col-md-8 col-6">
                 <div className="header-bottom__right header-five__btn d-flex align-items-center justify-content-end">
                   <div className="header-bottom__btn d-flex align-items-center">
-                    <a className="tp-btn-yellow inner-color tp-btn-hover alt-color-black d-none d-md-inline-block" href="#">
-                      <span className="white-text"><i className="fal fa-brain"></i> Free GTM Diagnosis</span>
-                      <b></b>
-                    </a>
+
                     <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars"></i></a>
                   </div>
                 </div>
@@ -108,7 +113,7 @@ export default function DemoConversionPage() {
           <main className="fix">
 
             {/* Hero Section */}
-            <div className="tp-hero-area tp-hero-five__ptb-5 p-relative grey-bg-2 fix">
+            <div className="tp-hero-area tp-hero-five__ptb-5 p-relative grey-bg-2 fix" style={{paddingBottom: '70px !important'}}>
               <div className="tp-hero-five__shape-2">
                 <img src="/assets/img/hero/hero-circle-5-1.png" alt="" />
               </div>
@@ -123,7 +128,7 @@ export default function DemoConversionPage() {
                   <div className="col-xl-8 col-lg-8">
                     <div className="tp-hero-five-section-wrap">
                       <div className="tp-hero-five-section-box z-index">
-                        <h1 className="tp-hero-title-5 hero-text-anim-2">
+                        <h1 className="tp-hero-title-5 hero-text-anim-2" style={{fontSize: '3rem', animationDelay: '0.2s'}}>
                           <i><i className="child-2">Your Demos Aren't Bad. <br /></i></i>
                           <i><i className="child-2">They're Quietly <span className="child-1 p-relative">Killing</span> <br /></i></i>
                           <i><i className="child-2">Your <span className="child-2">Close Rate</span></i></i>
@@ -143,7 +148,7 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Problem Section */}
-            <div className="tp-about-area pt-120 pb-120 grey-bg-3">
+            <div className="tp-about-area pt-60 pb-60 grey-bg-3">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
@@ -345,7 +350,7 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Pricing Tiers */}
-            <div className="tp-price-area pt-120 pb-120 grey-bg-2">
+            <div className="tp-price-area pt-60 pb-60 grey-bg-2">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
@@ -435,7 +440,7 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Who It's For */}
-            <div className="tp-about-area pt-120 pb-120">
+            <div className="tp-about-area pt-60 pb-60">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
@@ -512,7 +517,7 @@ export default function DemoConversionPage() {
             </div>
 
             {/* Results Section */}
-            <div className="tp-fun-fact-area tp-fun-fact-2 pt-120 pb-60 grey-bg-3">
+            <div className="tp-fun-fact-area tp-fun-fact-2 pt-60 pb-60 grey-bg-3">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
@@ -561,7 +566,7 @@ export default function DemoConversionPage() {
             </div>
 
             {/* How It Works */}
-            <div className="tp-plan-area tp-plan-space">
+            <div className="tp-plan-area tp-plan-space pt-60 pb-60">
               <div className="container">
                 <div className="row">
                   <div className="col-12">
