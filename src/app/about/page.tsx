@@ -1,8 +1,10 @@
 'use client'
 
+import PageLayout from '@/components/PageLayout'
+
 export default function AboutPage() {
   return (
-    <>
+    <PageLayout>
       {/* tp-breadcrumb-area-start */}
       <div className="about-banner-area p-relative">
         <div className="about-shape-1 z-index-3">
@@ -50,7 +52,7 @@ export default function AboutPage() {
       {/*ab-brand-area-start */}
       <div className="ab-brand-area">
         <div className="container">
-          <div className="ab-brand-border-bottom pb-90">
+          <div className="ab-brand-border-bottom pb-60">
             <div className="row">
               <div className="col-12">
                 <div className="ab-brand-section-box text-center mb-50">
@@ -62,51 +64,51 @@ export default function AboutPage() {
             <div className="row justify-content-center">
               <div className="col-xl-10">
                 <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-center">
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".2s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-1.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".4s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-2.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-3.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".8s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-4.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-5.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-6.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.1s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-7.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-8.png" alt="" />
-                    </div>
-                  </div>
-                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.3s">
-                    <div className="ab-brand-item mb-25">
-                      <img src="/assets/img/brand/brand-inner-9.png" alt="" />
-                    </div>
-                  </div>
+                  <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".2s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-1.png" alt="" />
+                       </div>
+                     </div>
+                    <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".4s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-2.png" alt="" />
+                       </div>
+                     </div>
+                    <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".6s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-3.png" alt="" />
+                       </div>
+                     </div>
+                    <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".8s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-4.png" alt="" />
+                       </div>
+                     </div>
+                    <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.0s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-5.png" alt="" />
+                       </div>
+                     </div>
+                    <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-6.png" alt="" />
+                       </div>
+                     </div>
+                    <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.4s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-7.png" alt="" />
+                       </div>
+                     </div>
+                    <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.6s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-8.png" alt="" />
+                       </div>
+                     </div>
+                    <div className="col wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.8s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                       <div className="ab-brand-item mb-25">
+                         <img src="/assets/img/brand/brand-inner-9.png" alt="" />
+                       </div>
+                     </div>
                 </div>
               </div>
             </div>
@@ -116,25 +118,25 @@ export default function AboutPage() {
       {/*ab-brand-area-end */}
 
       {/*ab-company-area-start */}
-      <div className="ab-company-area pt-105 pb-100">
+      <div className="ab-company-area pt-60 pb-60">
         <div className="container">
           <div className="row ab-company-section-space">
-            <div className="col-xl-6">
-              <div className="ab-company-section-box">
-                <h4 className="inner-section-subtitle">ABOUT THE COMPANY</h4>
-                <h3 className="tp-section-title">KLYRR is Built by Founders, <br />
-                  For Founders.</h3>
-              </div>
-            </div>
-            <div className="col-xl-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
-              <div className="ab-company-right">
-                <div className="ab-company-section-text">
-                  <p className="pb-10">We've been where you are. The late nights wondering why your funnel isn't converting. The expensive experiments that never pan out. The constant feeling that you're one breakthrough away from predictable growth.</p>
-                  <p className="pb-10">KLYRR was born from our own frustration with the status quo. We're not just another agency—we're founders who got tired of watching good companies struggle with broken growth systems.</p>
-                  <p><span>Our modular, data-driven systems eliminate chaos and guesswork from SaaS growth.</span></p>
-                </div>
-              </div>
-            </div>
+              <div className="col-xl-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".3s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                 <div className="ab-company-section-box">
+                   <h4 className="inner-section-subtitle">ABOUT THE COMPANY</h4>
+                   <h3 className="tp-section-title">KLYRR is Built by Founders, <br />
+                     For Founders.</h3>
+                 </div>
+               </div>
+              <div className="col-xl-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                 <div className="ab-company-right">
+                   <div className="ab-company-section-text">
+                     <p className="pb-10">We've been where you are. The late nights wondering why your funnel isn't converting. The expensive experiments that never pan out. The constant feeling that you're one breakthrough away from predictable growth.</p>
+                     <p className="pb-10">KLYRR was born from our own frustration with the status quo. We're not just another agency—we're founders who got tired of watching good companies struggle with broken growth systems.</p>
+                     <p><span>Our modular, data-driven systems eliminate chaos and guesswork from SaaS growth.</span></p>
+                   </div>
+                 </div>
+               </div>
           </div>
           <div className="row align-items-center">
             <div className="col-xl-4">
@@ -183,8 +185,8 @@ export default function AboutPage() {
       <div className="tp-about__area tp-about__pt-pb pb-160">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".2s">
-              <div className="tp-about__img-wrapper text-center text-lg-end p-relative">
+              <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".2s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                 <div className="tp-about__img-wrapper text-center text-lg-end p-relative">
                 <div className="tp-about__bg-shape">
                   <img src="/assets/img/about/about-bg-shape.png" alt="" />
                 </div>
@@ -202,8 +204,8 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".6s">
-              <div className="tp-about__right">
+              <div className="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".6s" data-wow-iteration="1" style={{visibility: 'visible', opacity: '1'}}>
+                <div className="tp-about__right">
                 <div className="tp-about__section-box">
                   <h4 className="tp-section-subtitle">FOUNDER-FIRST THINKING</h4>
                   <h3 className="tp-section-title mb-15">We Build Growth Systems, Not Dependencies
@@ -232,7 +234,7 @@ export default function AboutPage() {
       {/* tp-about-area-end */}
 
       {/* tp-team-area-start */}
-      <div className="tp-team-area grey-bg pt-120 pb-95">
+      <div className="tp-team-area grey-bg pt-60 pb-60">
         <div className="container">
           <div className="tp-team-section-wrapper tp-team-inner-section mb-70">
             <div className="row align-items-end">
@@ -474,8 +476,7 @@ export default function AboutPage() {
       {/* tp-journey-area-end */}
 
       {/* tp-cta-area-start */}
-      <div className="tp-cta-area p-relative">
-        <div className="tp-cta-grey-bg grey-bg-2"></div>
+      <div className="tp-cta-area p-relative pb-60 pt-60">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -492,6 +493,6 @@ export default function AboutPage() {
         </div>
       </div>
       {/* tp-cta-area-end */}
-    </>
+    </PageLayout>
   )
 }

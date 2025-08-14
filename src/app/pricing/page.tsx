@@ -11,12 +11,12 @@ export default function PricingPage() {
       {/* Breadcrumb Area */}
       <div className="breadcrumb-area p-relative">
         <div className="breadcrumb-shape-1 z-index-3">
-          <img src="/assets/img/breadcrumb/breadcrumb-shape-1.png" alt="" />
+          
         </div>
         <div className="breadcrumb-shape-2 z-index-3">
-          <img src="/assets/img/breadcrumb/breadcrumb-shape-2.png" alt="" />
+          
         </div>
-        <div className="container">
+        <div className="container pt-80 pb-50">
           <div className="row align-items-end">
             <div className="col-xl-9 col-lg-7 col-md-7">
               <div className="price-banner z-index-3">
@@ -62,7 +62,7 @@ export default function PricingPage() {
       </div>
 
       {/* Price Area */}
-      <div className="tp-price-area mb-120">
+      <div className="tp-price-area mt-200 mb-60">
         <div className="container">
           <div className="price-tab-content">
             <div className="tab-content" id="nav-tabContent">
@@ -459,12 +459,11 @@ export default function PricingPage() {
       </div>
 
       {/* CTA Area */}
-      <div className="tp-cta-area p-relative">
-        <div className="tp-cta-grey-bg grey-bg-2"></div>
-        <div className="container">
+       <div className="tp-cta-area p-relative pt-60 pb-60">
+         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="tp-cta-bg" data-background="/assets/img/cta/cta-bg.jpg">
+              <div className="tp-cta-bg" style={{backgroundImage: 'url(/assets/img/cta/cta-bg.jpg)'}}>
                 <div className="tp-cta-content tp-inner-font text-center">
                   <h3 className="tp-section-title text-white">Try our service now!</h3>
                   <p>Everything you need to accept card payments and grow your business <br />
