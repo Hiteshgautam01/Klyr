@@ -5,12 +5,82 @@ import ProductPageLayout from '@/components/ProductPageLayout'
 export default function LandExpandPage() {
   return (
     <ProductPageLayout>
+      {/* Header */}
+      <header className="tp-header-height">
+        <div id="header-sticky" className="header-bottom__area header-bottom__plr-5 header-bottom__transparent z-index-3 white-bg">
+          <div className="container-fluid p-0">
+            <div className="row g-0 align-items-center">
+              <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
+                <div className="header-bottom__logo">
+                  <a href="/"><img src="/assets/img/logo/mainlogo.svg" alt="KLYRR" style={{height: '40px', width: 'auto', filter: 'brightness(0) saturate(100%) invert(4%) sepia(97%) saturate(7486%) hue-rotate(240deg) brightness(93%) contrast(116%)'}} /></a>
+                </div>
+              </div>
+              <div className="col-xxl-8 col-xl-7 col-lg-8 d-none d-lg-block">
+                <div className="header-bottom__main-menu header-bottom__main-menu-5 text-center">
+                  <nav id="mobile-menu">
+                    <ul>
+                      <li>
+                        <a href="#">GTM Engines</a>
+                        <ul className="submenu" style={{ padding: '2px 0px' }}>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/zero-to-pipeline">Zero-to-Pipeline Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/demo-conversion">Demo Conversion Killshot</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/inbound-magnet">Inbound Magnet Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/founder-signal">Founder Signal Engine</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/products/land-expand">Land & Expand Engine</a></li>
+                          <li style={{ marginBottom: '0px' }}><a href="/products/sales-transition">Sales Transition System</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="/about">About</a></li>
+                      <li><a href="/pricing">Pricing</a></li>
+                      <li><a href="/resources">Resources</a>
+                      <ul className="submenu" style={{ padding: '2px 0px' }}>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/blog">Blog</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/case-studies">Case Studies</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/ebooks">Ebooks</a></li>
+                          <li style={{ marginBottom: '1px' }}><a href="/resources/videos">Videos</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="/contact">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div className="col-xxl-2 col-xl-3 col-lg-2 col-md-8 col-6">
+                <div className="header-bottom__right header-five__btn d-flex align-items-center justify-content-end">
+                  <div className="header-bottom__btn d-flex align-items-center">
+                    <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className="tpoffcanvas-area">
+          <div className="tpoffcanvas">
+            <div className="tpoffcanvas__header d-flex align-items-center justify-content-between">
+              <div className="tpoffcanvas__logo">
+                <a href="/"><img src="/assets/img/logo/mainlogo.svg" alt="KLYRR" style={{height: '40px', width: 'auto', filter: 'brightness(0) saturate(100%) invert(4%) sepia(97%) saturate(7486%) hue-rotate(240deg) brightness(93%) contrast(116%)'}} /></a>
+              </div>
+              <div className="tpoffcanvas__close">
+                <button className="close-btn"><i className="fal fa-times"></i></button>
+              </div>
+            </div>
+            <div className="tpoffcanvas__content">
+              <div className="mobile-menu d-block d-lg-none"></div>
+            </div>
+          </div>
+        </div>
+        <div className="body-overlay"></div>
+      </header>
+
       <div>
         <div id="smooth-wrapper">
           <div id="smooth-content">
             <main>
               {/* Hero Area */}
-              <div className="tp-hero-area tp-hero-five__ptb-5 p-relative grey-bg-2 fix">
+              <div className="tp-hero-area tp-hero-five__ptb-5 p-relative grey-bg-2 fix" style={{paddingBottom: '70px !important'}}>
                 <div className="tp-hero-five__shape-2">
                   <img src="/assets/img/hero/hero-circle-5-1.png" alt="" />
                 </div>
@@ -25,7 +95,7 @@ export default function LandExpandPage() {
                     <div className="col-xl-8 col-lg-8">
                       <div className="tp-hero-five-section-wrap">
                         <div className="tp-hero-five-section-box z-index">
-                          <h1 className="tp-hero-title-5 hero-text-anim-2">
+                          <h1 className="tp-hero-title-5 hero-text-anim-2" style={{fontSize: '3rem', animationDelay: '0.2s'}}>
                             <i><i className="child-2">Retention Isn't a Metric. <br /></i></i>
                             <i><i className="child-2">It's a System — and Yours Is <span className="child-1 p-relative">Bleeding</span></i></i>
                           </h1>
@@ -44,7 +114,7 @@ export default function LandExpandPage() {
               </div>
 
               {/* Problem Section */}
-              <div className="tp-about-area pt-120 pb-120 grey-bg-3">
+               <div className="tp-about-area pt-60 pb-60 grey-bg-3">
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
@@ -115,14 +185,14 @@ export default function LandExpandPage() {
               </div>
 
               {/* Engine Breakdown Section */}
-              <div id="playbooks" className="tp-service-area pt-120 pb-120">
+              <div id="playbooks" className="tp-service-area pt-60 pb-60">
                 <div className="container">
                   <div className="row">
                     <div className="col-xxl-12">
                       <div className="tp-section-box text-center mb-55">
-                        <span className="tp-section-subtitle-5 d-inline-block"><i className="fal fa-check-circle"></i> What the Land & Expand Engine Actually Does</span>
-                        <h2 className="tp-section-title-5 mb-20">
-                          This isn't success coaching.<br/>It's a modular post-sale <span>GTM system</span>
+                        <span className="tp-section-subtitle-5 d-inline-block" style={{color: '#007bff', fontWeight: '600'}}><i className="fal fa-check-circle"></i> What the Land & Expand Engine Actually Does</span>
+                        <h2 className="tp-section-title-5 mb-20" style={{color: '#1a1a1a', fontWeight: '700'}}>
+                          This isn't success coaching.<br/>It's a modular post-sale <span style={{color: '#007bff', fontWeight: '800'}}>GTM system</span>
                         </h2>
                         <p>Built to stop churn, trigger upsells, and compound NRR. We don't "train" your team. We install the playbooks, workflows, and signals that drive outcomes.</p>
                       </div>
@@ -130,16 +200,16 @@ export default function LandExpandPage() {
                   </div>
 
                   {/* Phase 1 */}
-                  <div className="row mb-60">
-                    <div className="col-xxl-12">
-                      <h3 className="tp-section-subtitle-3 mb-40"><i className="fal fa-wrench"></i> What's Inside (System Overview)</h3>
-                    </div>
-                  </div>
+                   <div className="row mb-30">
+                     <div className="col-xxl-12">
+                       <h3 className="tp-section-subtitle-3 mb-20"><i className="fal fa-wrench"></i> What's Inside (System Overview)</h3>
+                     </div>
+                   </div>
 
-                  <div className="row mb-60">
-                    <div className="col-xxl-12">
-                      <h4 className="tp-section-subtitle-4 mb-40">Phase 1: Find the Leaks</h4>
-                    </div>
+                   <div className="row mb-30">
+                     <div className="col-xxl-12">
+                       <h4 className="tp-section-subtitle-4 mb-20">Phase 1: Find the Leaks</h4>
+                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                       <div className="tp-service-five__item mb-30">
                         <div className="tp-service-five__icon">
@@ -173,10 +243,10 @@ export default function LandExpandPage() {
                   </div>
 
                   {/* Phase 2 */}
-                  <div className="row mb-60">
-                    <div className="col-xxl-12">
-                      <h4 className="tp-section-subtitle-4 mb-40">Phase 2: Install the System</h4>
-                    </div>
+                   <div className="row mb-30">
+                     <div className="col-xxl-12">
+                       <h4 className="tp-section-subtitle-4 mb-20">Phase 2: Install the System</h4>
+                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                       <div className="tp-service-five__item mb-30">
                         <div className="tp-service-five__icon">
@@ -210,10 +280,10 @@ export default function LandExpandPage() {
                   </div>
 
                   {/* Phase 3 */}
-                  <div className="row">
-                    <div className="col-xxl-12">
-                      <h4 className="tp-section-subtitle-4 mb-40">Phase 3: Drive Forecastable Growth</h4>
-                    </div>
+                   <div className="row">
+                     <div className="col-xxl-12">
+                       <h4 className="tp-section-subtitle-4 mb-20">Phase 3: Drive Forecastable Growth</h4>
+                     </div>
                     <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                       <div className="tp-service-five__item mb-30">
                         <div className="tp-service-five__icon">
@@ -259,7 +329,7 @@ export default function LandExpandPage() {
               </div>
 
               {/* Who It's For Section */}
-              <div className="tp-about-area pt-120 pb-120">
+              <div className="tp-about-area pt-60 pb-60">
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
@@ -336,7 +406,7 @@ export default function LandExpandPage() {
               </div>
 
               {/* Results Section */}
-              <div className="tp-fun-fact-area tp-fun-fact-2 pt-120 pb-60 grey-bg-3">
+              <div className="tp-fun-fact-area tp-fun-fact-2 pt-60 pb-60 grey-bg-3">
                 <div className="container">
                   <div className="row">
                     <div className="col-xxl-12">
@@ -376,7 +446,7 @@ export default function LandExpandPage() {
               </div>
 
               {/* CTA Section */}
-              <div id="contact" className="tp-cta-area pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" style={{backgroundImage: 'url(/assets/img/cta/cta-bg-5-1.png)'}}>
+              <div id="contact" className="tp-cta-area mt-120 pt-120 pb-120 mb-120 tp-cta-five-bg p-relative" style={{backgroundImage: 'url(/assets/img/cta/cta-bg-5-1.png)'}}>
                 <div className="tp-cta-five-shape-1 d-none d-md-block">
                   <img src="/assets/img/cta/cta-shape-5-1.png" alt="" />
                 </div> 
@@ -403,6 +473,95 @@ export default function LandExpandPage() {
                 </div>
               </div>
             </main>
+            <footer>
+              <div className="tp-footer__pl-pr">
+                <div className="tp-footer__area tp-footer__tp-border-bottom">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-xl-3 col-lg-3 col-md-6 pb-30">
+                        <div className="tp-footer__widget footer-widget-3 footer-widget-5 footer-col-3-1">
+                          <div className="tp-footer__logo mb-25">
+                            <a href="/">
+                              <img src="/assets/img/logo/mainlogo.svg" alt="KLYRR" style={{height: '45px', width: 'auto', filter: 'brightness(0) saturate(100%) invert(4%) sepia(97%) saturate(7486%) hue-rotate(240deg) brightness(93%) contrast(116%)'}} />
+                            </a>
+                          </div>
+                          <div className="tp-footer__contact-info">
+                            <p>KLYRR — Modular GTM Systems for SaaS Growth<br /><i className="fal fa-map-marker-alt"></i> India HQ. Serving global SaaS teams.</p>
+                            <div className="tp-footer__contact-mail">
+                              <span><i className="fal fa-mailbox"></i> contact@klyrr.com</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-xl-3 col-lg-3 col-md-6 pb-30">
+                        <div className="tp-footer__widget footer-widget-3 footer-col-3-2">
+                          <h4 className="tp-footer__widget-title">GTM Engines</h4>
+                          <div className="tp-footer__content">
+                            <ul>
+                              <li><a href="/products/zero-to-pipeline">Zero-to-Pipeline Engine</a></li>
+                              <li><a href="/products/demo-conversion">Demo Conversion Killshot</a></li>
+                              <li><a href="/products/inbound-magnet">Inbound Magnet Engine</a></li>
+                              <li><a href="/products/founder-signal">Founder Signal Engine</a></li>
+                              <li><a href="/products/land-expand">Land & Expand Engine</a></li>
+                              <li><a href="/products/sales-transition">Sales Transition System</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-xl-2 col-lg-2 col-md-6 pb-30">
+                        <div className="tp-footer__widget footer-widget-3 footer-col-3-3">
+                          <h4 className="tp-footer__widget-title">Company</h4>
+                          <div className="tp-footer__content">
+                            <ul>
+                              <li><a href="/about">About</a></li>
+                              <li><a href="/pricing">Pricing</a></li>
+                              <li><a href="/contact">Contact</a></li>
+                              <li><a href="#"><i className="fal fa-scroll"></i> Privacy Policy</a></li>
+                              <li><a href="#"><i className="fal fa-file-alt"></i> Terms of Service</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-xl-4 col-lg-4 col-md-6 pb-30">
+                        <div className="tp-footer__widget footer-widget-3 footer-widget-5 footer-col-3-4">
+                          <h4 className="tp-footer__widget-title">Newsletter</h4>
+                          <p>Join 1,000+ founders reading GTM playbooks that actually convert.</p>
+                          <div className="tp-footer__input mb-35 p-relative">
+                            <form action="#">
+                              <input type="text" placeholder="Business email address" />
+                              <button>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.00098 7H13.001" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                  <path d="M7.00098 1L13.001 7L7.00098 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                              </button>
+                            </form>
+                          </div>
+                          <div className="tp-footer__social-3">
+                            <h4>Social media</h4>
+                            <a href="#"><i className="fab fa-facebook-f"></i></a>
+                            <a href="#"><i className="fab fa-twitter"></i></a>
+                            <a href="#"><i className="fab fa-instagram"></i></a>
+                            <a href="#"><i className="fab fa-pinterest"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="tp-copyright__area pt-20 pb-20">
+                  <div className="container">
+                    <div className="row justify-content-center">
+                      <div className="col-xl-4 col-lg-6 col-md-6">
+                        <div className="tp-copyright__text tp-copyright__text-3 text-center">
+                          <span>Full Copyright & Design By <a href="#">KLYRR</a> – 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
           </div>
         </div>
       </div>
