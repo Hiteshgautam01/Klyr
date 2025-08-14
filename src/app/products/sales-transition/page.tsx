@@ -80,9 +80,7 @@ export default function SalesTransitionPage() {
             <main>
               {/* Hero Area */}
               <section className="tp-hero-area tp-hero-five__ptb-5 p-relative z-index-3">
-                <div className="tp-hero-five__shape-13 d-none d-xxl-block">
-                  <img src="/assets/img/hero/hero-shape-5-1-1.png" alt="" />
-                </div>
+
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-xxl-6 col-xl-6 col-lg-6">
@@ -118,7 +116,7 @@ export default function SalesTransitionPage() {
               </section>
 
               {/* Problem Section */}
-              <section className="tp-about-area pb-95 pt-120 grey-bg">
+              <section className="tp-about-area pb-60 pt-60 grey-bg">
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-xxl-6 col-xl-6 col-lg-6">
@@ -131,8 +129,8 @@ export default function SalesTransitionPage() {
                     <div className="col-xxl-6 col-xl-6 col-lg-6">
                       <div className="tp-about-wrapper pl-80">
                         <div className="tp-section-box tp-section-box-2 p-relative">
-                          <span className="tp-section-subtitle-5 d-inline-block"><i className="fal fa-times-circle"></i> The Risks You're Tolerating</span>
-                          <h2 className="tp-section-title-5 mb-30">
+                          <span className="tp-section-subtitle-5 d-inline-block" style={{color: '#3b82f6'}}><i className="fal fa-times-circle"></i> The Risks You're Tolerating</span>
+                          <h2 className="tp-section-title-5 mb-30" style={{color: '#1a1a1a'}}>
                             Most teams treat onboarding like a checklist.<br/>But here's what that misses:
                           </h2>
                         </div>
@@ -152,13 +150,13 @@ export default function SalesTransitionPage() {
               </section>
 
               {/* System Breakdown Section */}
-              <section id="benchmarks" className="tp-service-area pt-120 pb-120">
+              <section id="benchmarks" className="tp-service-area pt-60 pb-60">
                 <div className="container">
                   <div className="row">
                     <div className="col-xxl-12">
                       <div className="tp-section-box text-center mb-55">
-                        <span className="tp-section-subtitle-5 d-inline-block"><i className="fal fa-check-circle"></i> What This System Actually Does</span>
-                        <h2 className="tp-section-title-5 mb-20">
+                        <span className="tp-section-subtitle-5 d-inline-block" style={{color: '#3b82f6'}}><i className="fal fa-check-circle"></i> What This System Actually Does</span>
+                        <h2 className="tp-section-title-5 mb-20" style={{color: '#1a1a1a'}}>
                           This isn't HR onboarding.<br/>It's a conversion-first <span>enablement layer</span>
                         </h2>
                         <p>Built to clone founder-level sales intuition, tighten GTM execution, and prevent deals from falling through the cracks.</p>
@@ -166,15 +164,15 @@ export default function SalesTransitionPage() {
                     </div>
                   </div>
 
-                  {/* Phase breakdown */}
-                  <div className="row mb-60">
-                    <div className="col-xxl-12">
-                      <h3 className="tp-section-subtitle-3 mb-40"><i className="fal fa-ruler"></i> What's Inside (System Overview)</h3>
-                    </div>
-                  </div>
+                                     {/* Phase breakdown */}
+                   <div className="row mb-40">
+                     <div className="col-xxl-12">
+                       <h3 className="tp-section-subtitle-3 mb-30"><i className="fal fa-ruler"></i> What's Inside (System Overview)</h3>
+                     </div>
+                   </div>
 
-                  {/* Phase 1 */}
-                  <div className="row mb-60">
+                   {/* Phase 1 */}
+                   <div className="row mb-40">
                     <div className="col-xxl-12">
                       <h4 className="tp-section-subtitle-4 mb-40"><i className="fal fa-dot-circle"></i> Phase 1: Diagnose the Gaps</h4>
                     </div>
@@ -213,8 +211,8 @@ export default function SalesTransitionPage() {
                     </div>
                   </div>
 
-                  {/* Phase 2 */}
-                  <div className="row mb-60">
+                                     {/* Phase 2 */}
+                   <div className="row mb-40">
                     <div className="col-xxl-12">
                       <h4 className="tp-section-subtitle-4 mb-40"><i className="fal fa-dot-circle"></i> Phase 2: Build the Assets</h4>
                     </div>
@@ -317,14 +315,14 @@ export default function SalesTransitionPage() {
               </section>
 
               {/* Who It's For Section */}
-              <section className="tp-about-area pb-95 pt-120 grey-bg">
+              <section className="tp-about-area pb-60 pt-60 grey-bg">
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-xxl-6 col-xl-6 col-lg-6">
                       <div className="tp-about-wrapper pr-80">
                         <div className="tp-section-box tp-section-box-2 p-relative mb-30">
-                          <span className="tp-section-subtitle-5 d-inline-block"><i className="fal fa-users"></i> Who This Is For</span>
-                          <h2 className="tp-section-title-5">
+                          <span className="tp-section-subtitle-5 d-inline-block" style={{color: '#3b82f6'}}><i className="fal fa-users"></i> Who This Is For</span>
+                          <h2 className="tp-section-title-5" style={{color: '#1a1a1a'}}>
                             You don't have an onboarding issue.<br/>You have an <span>execution leak.</span>
                           </h2>
                         </div>
@@ -350,13 +348,13 @@ export default function SalesTransitionPage() {
               </section>
 
               {/* Results Section */}
-              <section className="tp-counter-area pt-120 pb-120">
+              <section className="tp-counter-area pt-60 pb-60">
                 <div className="container">
                   <div className="row">
                     <div className="col-xxl-12">
                       <div className="tp-section-box text-center mb-55">
-                        <span className="tp-section-subtitle-5 d-inline-block"><i className="fal fa-chart-bar"></i> Real Results</span>
-                        <h2 className="tp-section-title-5 mb-20">
+                        <span className="tp-section-subtitle-5 d-inline-block" style={{color: '#3b82f6'}}><i className="fal fa-chart-bar"></i> Real Results</span>
+                        <h2 className="tp-section-title-5 mb-20" style={{color: '#1a1a1a'}}>
                           "This is the first time I've seen our founder's sales process<br/><span>documented clearly."</span>
                         </h2>
                         <p className="text-muted">— Head of Sales, B2B SaaS</p>
@@ -405,13 +403,13 @@ export default function SalesTransitionPage() {
               </section>
 
               {/* How It Works Section */}
-              <section className="tp-service-area pt-120 pb-120 grey-bg">
+              <section className="tp-service-area pt-60 pb-60 grey-bg">
                 <div className="container">
                   <div className="row">
                     <div className="col-xxl-12">
                       <div className="tp-section-box text-center mb-55">
-                        <span className="tp-section-subtitle-5 d-inline-block"><i className="fal fa-cog"></i> How It Works (3-Step Flow)</span>
-                        <h2 className="tp-section-title-5">
+                        <span className="tp-section-subtitle-5 d-inline-block" style={{color: '#3b82f6'}}><i className="fal fa-cog"></i> How It Works (3-Step Flow)</span>
+                        <h2 className="tp-section-title-5" style={{color: '#1a1a1a'}}>
                           Faster ramp, tighter demos, cleaner transitions,<br/><span>better revenue outcomes</span>
                         </h2>
                       </div>
@@ -459,13 +457,13 @@ export default function SalesTransitionPage() {
               </section>
 
               {/* FAQ Section */}
-              <section className="tp-faq-area pt-120 pb-120">
+              <section className="tp-faq-area pt-60 pb-60">
                 <div className="container">
                   <div className="row">
                     <div className="col-xxl-12">
                       <div className="tp-section-box text-center mb-55">
-                        <span className="tp-section-subtitle-5 d-inline-block"><i className="fal fa-clipboard-list"></i> Common Questions</span>
-                        <h2 className="tp-section-title-5">What founders ask about our transition systems</h2>
+                        <span className="tp-section-subtitle-5 d-inline-block" style={{color: '#3b82f6'}}><i className="fal fa-clipboard-list"></i> Common Questions</span>
+                        <h2 className="tp-section-title-5" style={{color: '#1a1a1a'}}>What founders ask about our transition systems</h2>
                       </div>
                     </div>
                   </div>
