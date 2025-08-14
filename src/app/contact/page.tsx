@@ -185,7 +185,7 @@ export default function ContactPage() {
       </div>
 
       {/* Contact Inner Area */}
-      <div className="contact-inner-area pb-130">
+      <div className="contact-inner-area pb-100">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
@@ -233,12 +233,11 @@ export default function ContactPage() {
       </div>
 
       {/* CTA Area */}
-      <div className="tp-cta-area p-relative">
-        <div className="tp-cta-grey-bg grey-bg-2"></div>
+      <div className="tp-cta-area p-relative  pb-60">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="tp-cta-bg" data-background="/assets/img/cta/cta-bg.jpg">
+              <div className="tp-cta-bg" style={{backgroundImage: 'url(/assets/img/cta/cta-bg.jpg)'}}>
                 <div className="tp-cta-content tp-inner-font text-center">
                   <h3 className="tp-section-title text-white">Try our service now!</h3>
                   <p>Everything you need to accept card payments and grow your business <br />
